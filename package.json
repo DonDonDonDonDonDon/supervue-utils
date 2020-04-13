@@ -1,0 +1,21 @@
+{
+  "name": "supervue-utils",
+  "version": "0.0.1",
+  "description": "supervue-utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "supervue",
+    "supervue-utils",
+    "utils"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DonDonDonDonDonDon/supervue-utils.git"
+  },
+  "author": "don",
+  "license": "ISC",
+  "dependencies": {}
+}
