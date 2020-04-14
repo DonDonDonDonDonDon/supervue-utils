@@ -1,21 +1,87 @@
 {
   "name": "supervue-utils",
-  "version": "0.0.1",
-  "description": "supervue-utils",
+  "version": "0.0.6",
+  "description": "JavaScript 函数库、工具类",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "supervue",
-    "supervue-utils",
-    "utils"
+  "unpkg": "dist/supervue-utils.min.js",
+  "jsdelivr": "dist/supervue-utils.min.js",
+  "typings": "index.d.ts",
+  "files": [
+    "methods",
+    "dist",
+    "*.ts",
+    "*.d.ts"
   ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "eslint dist/supervue-utils.js test/**/*.js methods/**/*.js",
+    "unit": "jest",
+    "test": "npm run lint && npm run unit"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-router": "^4.1.0",
+    "@vue/cli-plugin-typescript": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "core-js": "^3.4.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jest": "^25.1.0",
+    "markdown-doctest": "^1.0.0",
+    "highlight.js": "^9.17.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "~3.7.5",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.3.0",
+    "vue-router": "^3.1.3",
+    "vue-template-compiler": "^2.6.10"
+  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:DonDonDonDonDonDon/supervue-utils.git"
+    "url": "git+https://github.com/DonDonDonDonDonDon/supervue-utils"
   },
-  "author": "don",
-  "license": "ISC",
-  "dependencies": {}
+  "keywords": [
+    "utils",
+    "supervue-utils",
+    "tools"
+  ],
+  "author": {
+    "name": "don",
+    "email": "751931087@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DonDonDonDonDonDon/supervue-utils/issues"
+  },
+  "homepage": "https://github.com/DonDonDonDonDonDon/supervue-utils#readme",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard",
+      "@vue/typescript"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
