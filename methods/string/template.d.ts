@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 解析动态字符串模板
@@ -7,8 +7,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function template(str: string, obj: any): string;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 解析动态字符串模板
      * @param str 字符串模板

@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 判断属性中的键和值是否包含在对象中
@@ -7,8 +7,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function isMatch(obj: any, source: any): boolean;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 判断属性中的键和值是否包含在对象中
      * @param obj 对象

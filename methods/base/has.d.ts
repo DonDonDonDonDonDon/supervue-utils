@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 检查键、路径是否是该对象的属性
@@ -7,8 +7,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function has(obj: any, property: string | string[]): boolean;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 检查键、路径是否是该对象的属性
      * @param obj 对象

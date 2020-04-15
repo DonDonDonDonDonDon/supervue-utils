@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 字符串转 JSON
@@ -6,8 +6,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function toStringJSON(str: string): any;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 字符串转 JSON
      * @param str 字符串

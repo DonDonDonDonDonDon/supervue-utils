@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 深度比较两个对象之间的值是否相等
@@ -7,8 +7,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function isEqual(obj1: any, obj2: any): boolean;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 深度比较两个对象之间的值是否相等
      * @param obj1 值1

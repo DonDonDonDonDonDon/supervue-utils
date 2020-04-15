@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 返回前几周或后几周的日期,可以指定星期几(0~6)，默认当前
@@ -8,8 +8,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function getWhatWeek(date: string | Date | number, week?: number | string, day?: number | string): Date;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 返回前几周或后几周的日期,可以指定星期几(0~6)，默认当前
      * @param date 字符串/日期/时间戳

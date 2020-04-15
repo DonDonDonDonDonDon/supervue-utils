@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 任意格式字符串转为日期
@@ -7,8 +7,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function toStringDate(str: string | Date | number, format?: string): Date;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 任意格式字符串转为日期
      * @param str 字符串/日期/时间戳

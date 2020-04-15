@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function eachTreeIterate(item: any, index: number, items: any[], path: Array<string>, parent: any, nodes: any[]): any;
 
@@ -15,8 +15,8 @@ export interface eachTreeOptions {
  */
 export declare function eachTree(array: any[], iterate: typeof eachTreeIterate, options?: eachTreeOptions, context?: any): void;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 从树结构中遍历数据的键、值、路径
      * @param {Object} obj 对象/数组

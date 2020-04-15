@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 import { XEUrl } from '..//url'
 
 /**
@@ -6,8 +6,8 @@ import { XEUrl } from '..//url'
  */
 export declare function locat(): XEUrl;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 获取地址栏信息
      */

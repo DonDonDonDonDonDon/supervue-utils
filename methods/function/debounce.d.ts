@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface DebounceOptions {
   /**
@@ -19,8 +19,8 @@ export interface DebounceOptions {
  */
 export declare function debounce(callback: Function, wait: number, options: DebounceOptions): Function;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 函数去抖；当被调用 n 毫秒后才会执行，如果在这时间内又被调用则将重新计算执行时间
      * @param callback 回调

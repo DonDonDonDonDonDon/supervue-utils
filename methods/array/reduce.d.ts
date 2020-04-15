@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function reduceIterate(previous: any, item: any, index: number, list: any[]): any;
 
@@ -11,8 +11,8 @@ export declare function reduceIterate(previous: any, item: any, index: number, l
  */
 export declare function reduce(array: any[], iteratee?: typeof reduceIterate, initialValue?: any): any;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 接收一个函数作为累加器，数组中的每个值（从左到右）开始合并，最终为一个值
      * @param array 数组

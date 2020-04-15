@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 将多个数的值返回唯一的并集数组
@@ -6,8 +6,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function union(...array: any[]): any[];
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 将多个数的值返回唯一的并集数组
      * @param array 数组

@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function findLastIndexOfIterate(item: any, index: any, obj: any): any;
 
@@ -10,8 +10,8 @@ export declare function findLastIndexOfIterate(item: any, index: any, obj: any):
  */
 export declare function findLastIndexOf(obj: any, iteratee: typeof findLastIndexOfIterate, context?: any): any;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 从最后开始的索引值,返回对象第一个索引值
      * @param obj 对象

@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 转数值
@@ -6,8 +6,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function toNumber(num: string | number): number;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 转数值
      * @param num 数值/字符串

@@ -1,7 +1,7 @@
 
 import setupDefaults from './setupDefaults'
 
-export interface XEUtilsMethods {
+export interface SupervueUtilsMethods {
   /**
    * 版本信息
    */
@@ -24,6 +24,6 @@ export interface XEUtilsMethods {
 /**
  * JavaScript 函数库、工具类
  */
-export declare var SupervueUtils: XEUtilsMethods
+export declare var SupervueUtils: SupervueUtilsMethods
 
 export default SupervueUtils

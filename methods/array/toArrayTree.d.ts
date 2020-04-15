@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface toArrayTreeOptions {
   strict?: boolean;
@@ -17,8 +17,8 @@ export interface toArrayTreeOptions {
  */
 export declare function toArrayTree(array: any[], options?: toArrayTreeOptions): any[];
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 将一个带层级的数据列表转成树结构
      * @param {Array} array 数组

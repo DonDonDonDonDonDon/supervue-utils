@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 和 Number.toFixed 类似，区别就是不会对小数进行四舍五入，结果返回数值
@@ -7,8 +7,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function toFixedNumber(num: string | number, digits: number): number;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 和 Number.toFixed 类似，区别就是不会对小数进行四舍五入，结果返回数值
      * @param num 数值/字符串

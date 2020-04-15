@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface XEUrl {
   /**
@@ -57,8 +57,8 @@ export interface XEUrl {
  */
 export declare function parseUrl(ulr: string): XEUrl;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 解析 URL 参数
      * @param ulr 字符串

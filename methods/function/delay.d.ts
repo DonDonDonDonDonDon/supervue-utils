@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 该方法和 setTimeout 一样的效果，区别就是支持上下文和额外参数
@@ -8,8 +8,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function delay(callback: Function, wait: number, ...params: any[]): number;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 该方法和 setTimeout 一样的效果，区别就是支持上下文和额外参数
      * @param callback 回调

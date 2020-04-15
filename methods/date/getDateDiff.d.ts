@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface dateDiffResult {
   /**
@@ -47,8 +47,8 @@ export interface dateDiffResult {
  */
 export declare function getDateDiff(startDate: string | Date | number, endDate: string | Date | number, rules?: any[][]): dateDiffResult;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 返回两个日期之间差距,如果结束日期小于开始日期 done 为 fasle
      * @param startDate 开始日期

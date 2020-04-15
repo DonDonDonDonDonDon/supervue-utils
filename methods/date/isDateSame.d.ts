@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 判断两个日期是否相同
@@ -8,8 +8,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function isDateSame(date1: Date | number | string, date2: Date | number | string, format?: string): boolean;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 判断两个日期是否相同
      * @param date1 日期

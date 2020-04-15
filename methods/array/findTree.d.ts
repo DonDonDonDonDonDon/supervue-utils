@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function findTreeIterate(item: any, index: number, items: any[], path: string[], parent: any, nodes: any[]): any;
 
@@ -24,8 +24,8 @@ interface findTreeOptions {
  */
 export declare function findTree(array: any[], iterate: typeof findTreeIterate, options?: findTreeOptions, context?: any): terrResult;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 从树结构中查找匹配第一条数据的键、值、路径
      * @param {Object} obj 对象/数组

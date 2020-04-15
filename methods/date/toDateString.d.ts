@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface ToDateStringOptions {
   /**
@@ -21,8 +21,8 @@ export interface ToDateStringOptions {
  */
 export declare function toDateString(date: string | Date | number, format?: string, options?: ToDateStringOptions): string;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 日期格式化为任意格式字符串，转义符号 []
      * @param date 字符串/日期/时间戳

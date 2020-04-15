@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 创建一个函数, 调用次数不超过 count 次之前执行回调并将所有结果记住后返回
@@ -8,8 +8,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function before(count: number, callback: Function, context?: any): Function;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 创建一个函数, 调用次数不超过 count 次之前执行回调并将所有结果记住后返回
      * @param count 次数

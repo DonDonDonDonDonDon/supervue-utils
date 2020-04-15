@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 返回某个月份的天数,可以指定前几个月或后几个月，默认当前
@@ -7,8 +7,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function getDayOfMonth(date: string | Date | number, month: number): number;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 返回某个月份的天数,可以指定前几个月或后几个月，默认当前
      * @param date 字符串/日期/时间戳

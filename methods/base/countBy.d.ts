@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function countByIterate(item: any, index: any, obj: any): any;
 
@@ -10,8 +10,8 @@ export declare function countByIterate(item: any, index: any, obj: any): any;
  */
 export declare function countBy(obj: any, iteratee: typeof countByIterate, context?: any): any;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 集合分组统计,返回各组中对象的数量统计
      * @param obj 对象

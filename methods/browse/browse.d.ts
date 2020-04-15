@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface XEBrowse {
   /**
@@ -64,8 +64,8 @@ export interface XEBrowse {
  */
 export declare function browse(): XEBrowse;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 获取浏览器信息
      */

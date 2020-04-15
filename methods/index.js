@@ -1,7 +1,7 @@
 'use strict'
 
 // 核心
-var XEUtils = require('./xe-utils')
+var SupervueUtils = require('./supervue-utils')
 
 // 对象相关的方法
 var assign = require('./object/assign')
@@ -184,7 +184,7 @@ var locat = require('./browse/locat')
 var cookie = require('./browse/cookie')
 var browse = require('./browse/browse')
 
-assign(XEUtils, {
+assign(SupervueUtils, {
   // object
   assign: assign,
   extend: extend,
@@ -367,4 +367,4 @@ assign(XEUtils, {
   cookie: cookie
 })
 
-module.exports = XEUtils
+module.exports = SupervueUtils

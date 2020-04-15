@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function lastForOfIterate(item: any, index: any, obj: any): any;
 
@@ -10,8 +10,8 @@ export declare function lastForOfIterate(item: any, index: any, obj: any): any;
  */
 export declare function lastForOf(obj: any, iteratee: typeof lastForOfIterate, context?: any): void;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 迭代器,从最后开始迭代,支持 return false 跳出循环 break
      * @param obj 对象

@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function searchTreeIterate(item: any, index: number, items: any[], path: string[], parent: any, nodes: any[]): any;
 
@@ -17,8 +17,8 @@ export interface searchTreeOptions {
  */
 export declare function searchTree(array: any[], iterate: typeof searchTreeIterate, options?: searchTreeOptions, context?: any): any[];
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 从树结构中根据回调查找数据
      * @param {Object} obj 对象/数组

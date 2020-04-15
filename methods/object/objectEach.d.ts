@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function objectEachIterate(item: any, key: string, obj: any): any;
 
@@ -10,8 +10,8 @@ export declare function objectEachIterate(item: any, key: string, obj: any): any
  */
 export declare function objectEach(obj: any, iteratee: typeof objectEachIterate, context ?: any): void;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 对象迭代器
      * @param obj 对象

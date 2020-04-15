@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface CookieOptions {
   /**
@@ -74,8 +74,8 @@ export interface XECookie {
  */
 export declare function cookie(name?: string, value?: any, options?: CookieOptions): XECookie;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
     * Cookie 操作函数
     * @param name 键/数组/对象

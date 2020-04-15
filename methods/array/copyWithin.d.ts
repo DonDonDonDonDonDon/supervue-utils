@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 复制数组的一部分到同一数组中的另一个位置,数组大小不变
@@ -9,8 +9,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function copyWithin(array: Array<any>, target: number, start?: Number, end?: number): Array<any>;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 复制数组的一部分到同一数组中的另一个位置,数组大小不变
      * @param array 数组

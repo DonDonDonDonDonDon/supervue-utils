@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export declare function removeIterate(item: any, index: any, obj: any): any;
 
@@ -9,8 +9,8 @@ export declare function removeIterate(item: any, index: any, obj: any): any;
  */
 export declare function remove(obj: any, iteratee: number | string | typeof removeIterate): any;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 移除对象属性
      * @param obj 对象

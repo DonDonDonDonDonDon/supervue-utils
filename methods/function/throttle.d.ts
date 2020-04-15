@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 export interface ThrottleOptions {
   /**
@@ -19,8 +19,8 @@ export interface ThrottleOptions {
  */
 export declare function throttle(callback: Function, wait: number, options?: ThrottleOptions): Function;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 节流函数；当被调用 n 毫秒后才会执行，如果在这时间内又被调用则至少每隔 n 秒毫秒调用一次该函数
      * @param callback 回调

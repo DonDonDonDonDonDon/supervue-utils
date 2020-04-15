@@ -1,4 +1,4 @@
-import { XEUtilsMethods } from '../xe-utils'
+import { SupervueUtilsMethods } from '../supervue-utils'
 
 /**
  * 返回前几月或后几月的日期,可以指定月初(first)、月末(last)、天数，默认当前
@@ -8,8 +8,8 @@ import { XEUtilsMethods } from '../xe-utils'
  */
 export declare function getWhatMonth(date: string | Date | number, month?: number | string, day?: number | string): Date;
 
-declare module '../xe-utils' {
-  interface XEUtilsMethods {
+declare module '../supervue-utils' {
+  interface SupervueUtilsMethods {
     /**
      * 返回前几月或后几月的日期,可以指定月初(first)、月末(last)、天数，默认当前
      * @param date 字符串/日期/时间戳

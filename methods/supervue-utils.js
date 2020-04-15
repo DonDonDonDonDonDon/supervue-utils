@@ -1,12 +1,12 @@
 'use strict'
 
-import  setupDefaults from './setupDefaults'
+var setupDefaults = require('./setupDefaults')
 
-import  arrayEach from './array/arrayEach'
-import  each from './base/each'
-import  isFunction from './base/isFunction'
+var arrayEach = require('./array/arrayEach')
+var each = require('./base/each')
+var isFunction = require('./base/isFunction')
 
-import  assign from './object/assign'
+var assign = require('./object/assign')
 
 function mixin () {
   arrayEach(arguments, function (methods) {
@@ -30,4 +30,4 @@ SupervueUtils.v = 'v2'
 SupervueUtils.mixin = mixin
 SupervueUtils.setup = setup
 
-export default SupervueUtils
+module.exports = SupervueUtils
