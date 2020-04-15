@@ -1,3 +1,3 @@
-import XEUtils from './methods'
+import SupervueUtils from './methods'
 
-export default XEUtils
+export default SupervueUtils
