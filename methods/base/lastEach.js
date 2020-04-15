@@ -1,6 +1,6 @@
-import  isArray from './isArray'
-import  lastArrayEach from '../array/lastArrayEach'
-import  lastObjectEach from '../object/lastObjectEach'
+var isArray = require('./isArray')
+var lastArrayEach = require('../array/lastArrayEach')
+var lastObjectEach = require('../object/lastObjectEach')
 
 /**
   * 迭代器,从最后开始迭代
@@ -17,4 +17,4 @@ function lastEach (obj, iterate, context) {
   return obj
 }
 
-export default lastEach
+module.exports = lastEach

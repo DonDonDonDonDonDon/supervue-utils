@@ -1,18 +1,18 @@
-import  setupDefaults from '../setupDefaults'
+var setupDefaults = require('../setupDefaults')
 
-import  helperGetDateFullYear from './helperGetDateFullYear'
-import  helperGetDateMonth from './helperGetDateMonth'
+var helperGetDateFullYear = require('./helperGetDateFullYear')
+var helperGetDateMonth = require('./helperGetDateMonth')
 
-import  toStringDate from './toStringDate'
-import  getYearWeek from './getYearWeek'
-import  getYearDay from './getYearDay'
+var toStringDate = require('./toStringDate')
+var getYearWeek = require('./getYearWeek')
+var getYearDay = require('./getYearDay')
 
-import  assign from '../object/assign'
+var assign = require('../object/assign')
 
-import  isDate from '../base/isDate'
-import  isFunction from '../base/isFunction'
+var isDate = require('../base/isDate')
+var isFunction = require('../base/isFunction')
 
-import  padStart from '../string/padStart'
+var padStart = require('../string/padStart')
 
 function handleCustomTemplate (date, formats, match, value) {
   var format = formats[match]
@@ -129,4 +129,4 @@ function toDateString (date, format, options) {
   return ''
 }
 
-export default toDateString
+module.exports = toDateString

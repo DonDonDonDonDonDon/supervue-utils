@@ -1,11 +1,11 @@
-import  helperDeleteProperty from './helperDeleteProperty'
+var helperDeleteProperty = require('./helperDeleteProperty')
 
-import  isPlainObject from './isPlainObject'
-import  isObject from './isObject'
-import  isArray from './isArray'
-import  isNull from './isNull'
-import  assign from '../object/assign'
-import  objectEach from '../object/objectEach'
+var isPlainObject = require('./isPlainObject')
+var isObject = require('./isObject')
+var isArray = require('./isArray')
+var isNull = require('./isNull')
+var assign = require('../object/assign')
+var objectEach = require('../object/objectEach')
 
 /**
   * 清空对象
@@ -47,4 +47,4 @@ function clear (obj, defs, assigns) {
   return obj
 }
 
-export default clear
+module.exports = clear

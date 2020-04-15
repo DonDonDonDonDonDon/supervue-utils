@@ -8,4 +8,4 @@ function isTypeError (obj) {
   return obj ? obj.constructor === TypeError : false
 }
 
-export default isTypeError
+module.exports = isTypeError

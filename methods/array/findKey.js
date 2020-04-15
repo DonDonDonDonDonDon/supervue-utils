@@ -1,4 +1,4 @@
-import  helperCreateIterateHandle from './helperCreateIterateHandle'
+var helperCreateIterateHandle = require('./helperCreateIterateHandle')
 
 /**
   * 查找匹配第一条数据的键
@@ -10,4 +10,4 @@ import  helperCreateIterateHandle from './helperCreateIterateHandle'
   */
 var findKey = helperCreateIterateHandle('', 0, 2, true)
 
-export default findKey
+module.exports = findKey

@@ -1,4 +1,4 @@
-import  slice from '../array/slice'
+var slice = require('../array/slice')
 
 /**
   * 创建一个只能调用一次的函数,只会返回第一次执行后的结果
@@ -22,4 +22,4 @@ function once (callback, context) {
   }
 }
 
-export default once
+module.exports = once

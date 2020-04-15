@@ -1,5 +1,5 @@
 /* eslint-disable valid-typeof */
-import  staticStrUndefined from '../static/staticStrUndefined'
+var staticStrUndefined = require('../static/staticStrUndefined')
 
 /**
   * 判断是否FormData对象
@@ -12,4 +12,4 @@ function isFormData (obj) {
   return supportFormData && obj instanceof FormData
 }
 
-export default isFormData
+module.exports = isFormData

@@ -1,12 +1,12 @@
-import  staticDayTime from '../static/staticDayTime'
-import  staticStrFirst from '../static/staticStrFirst'
+var staticDayTime = require('../static/staticDayTime')
+var staticStrFirst = require('../static/staticStrFirst')
 
-import  helperGetYMDTime from './helperGetYMDTime'
+var helperGetYMDTime = require('./helperGetYMDTime')
 
-import  getWhatYear from './getWhatYear'
-import  toStringDate from './toStringDate'
+var getWhatYear = require('./getWhatYear')
+var toStringDate = require('./toStringDate')
 
-import  isDate from '../base/isDate'
+var isDate = require('../base/isDate')
 
 /**
   * 返回某个年份的第几天
@@ -22,4 +22,4 @@ function getYearDay (date) {
   return date
 }
 
-export default getYearDay
+module.exports = getYearDay

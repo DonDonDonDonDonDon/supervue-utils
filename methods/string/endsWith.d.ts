@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 判断字符串是否在源字符串的头部
@@ -8,8 +8,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function endsWith(str: string, val: string, startIndex?: number): string;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 判断字符串是否在源字符串的头部
      * @param str 字符串

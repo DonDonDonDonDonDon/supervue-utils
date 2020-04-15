@@ -6,4 +6,4 @@ function helperCreateTreeFunc (handle) {
   }
 }
 
-export default helperCreateTreeFunc
+module.exports = helperCreateTreeFunc

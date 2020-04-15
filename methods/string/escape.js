@@ -1,6 +1,6 @@
-import  staticEscapeMap from '../static/staticEscapeMap'
+var staticEscapeMap = require('../static/staticEscapeMap')
 
-import  helperFormatEscaper from './helperFormatEscaper'
+var helperFormatEscaper = require('./helperFormatEscaper')
 
 /**
   * 转义HTML字符串，替换&, <, >, ", ', `字符
@@ -10,4 +10,4 @@ import  helperFormatEscaper from './helperFormatEscaper'
   */
 var escape = helperFormatEscaper(staticEscapeMap)
 
-export default escape
+module.exports = escape

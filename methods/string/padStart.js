@@ -1,7 +1,7 @@
-import  toValString from './toString'
-import  repeat from '../string/repeat'
+var toValString = require('./toString')
+var repeat = require('../string/repeat')
 
-import  isUndefined from '../base/isUndefined'
+var isUndefined = require('../base/isUndefined')
 
 /**
   * 用指定字符从前面开始补全字符串
@@ -28,4 +28,4 @@ function padStart (str, targetLength, padString) {
   return rest
 }
 
-export default padStart
+module.exports = padStart

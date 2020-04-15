@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 判断数组是否包含另一数组
@@ -7,8 +7,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function includeArrays(array1: any[], array2: any[]): boolean;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 判断数组是否包含另一数组
      * @param array1 数组

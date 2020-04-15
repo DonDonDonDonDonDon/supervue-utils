@@ -1,8 +1,8 @@
-import  helperGetDateFullYear from './helperGetDateFullYear'
-import  helperGetDateMonth from './helperGetDateMonth'
+var helperGetDateFullYear = require('./helperGetDateFullYear')
+var helperGetDateMonth = require('./helperGetDateMonth')
 
 function helperGetYMD (date) {
   return new Date(helperGetDateFullYear(date), helperGetDateMonth(date), date.getDate())
 }
 
-export default helperGetYMD
+module.exports = helperGetYMD

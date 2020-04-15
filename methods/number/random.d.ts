@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 获取一个指定范围内随机数
@@ -7,8 +7,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function random(min: number, max: number): number;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 获取一个指定范围内随机数
      * @param min 最小值

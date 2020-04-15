@@ -1,14 +1,14 @@
-import  arrayEach from './arrayEach'
-import  toArray from './toArray'
-import  map from './map'
+var arrayEach = require('./arrayEach')
+var toArray = require('./toArray')
+var map = require('./map')
 
-import  isArray from '../base/isArray'
-import  isFunction from '../base/isFunction'
-import  isUndefined from '../base/isUndefined'
-import  isNull from '../base/isNull'
-import  eqNull from '../base/eqNull'
-import  get from '../base/get'
-import  property from '../function/property'
+var isArray = require('../base/isArray')
+var isFunction = require('../base/isFunction')
+var isUndefined = require('../base/isUndefined')
+var isNull = require('../base/isNull')
+var eqNull = require('../base/eqNull')
+var get = require('../base/get')
+var property = require('../function/property')
 
 // function sortByDef (v1, v2) {
 //   return v1 > v2 ? 1 : -1
@@ -79,4 +79,4 @@ function sortBy (arr, iterate, context) {
   return []
 }
 
-export default sortBy
+module.exports = sortBy

@@ -1,4 +1,4 @@
-import  isArray from '../base/isArray'
+var isArray = require('../base/isArray')
 
 /**
   * 浅复制数组的一部分到同一数组中的另一个位置,数组大小不变
@@ -36,4 +36,4 @@ function copyWithin (array, target, start, end) {
   return array
 }
 
-export default copyWithin
+module.exports = copyWithin

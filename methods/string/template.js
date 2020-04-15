@@ -1,7 +1,7 @@
-import  toValString from './toString'
-import  trim from './trim'
+var toValString = require('./toString')
+var trim = require('./trim')
 
-import  get from '../base/get'
+var get = require('../base/get')
 
 /**
  * 解析动态字符串模板
@@ -14,4 +14,4 @@ function template (str, obj) {
   })
 }
 
-export default template
+module.exports = template

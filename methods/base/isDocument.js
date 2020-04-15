@@ -1,4 +1,4 @@
-import  staticDocument from '../static/staticDocument'
+var staticDocument = require('../static/staticDocument')
 
 /**
   * 判断是否Document对象
@@ -10,4 +10,4 @@ function isDocument (obj) {
   return !!(obj && staticDocument && obj.nodeType === 9)
 }
 
-export default isDocument
+module.exports = isDocument

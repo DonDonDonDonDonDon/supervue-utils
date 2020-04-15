@@ -13,7 +13,7 @@ export interface XEUtilsMethods {
   setup(options: setupDefaults): setupDefaults;
 
   /**
-   * 将您自己的实用函数扩展到 SupervueUtils
+   * 将您自己的实用函数扩展到 XEUtils
    * @param methods 函数集
    */
   mixin(...methods: any[]): void;
@@ -24,6 +24,6 @@ export interface XEUtilsMethods {
 /**
  * JavaScript 函数库、工具类
  */
-export declare var SupervueUtils: XEUtilsMethods
+export declare var XEUtils: XEUtilsMethods
 
-export default SupervueUtils
+export default XEUtils

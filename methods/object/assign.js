@@ -1,7 +1,7 @@
-import  arrayEach from '../array/arrayEach'
-import  keys from '../base/keys'
-import  isArray from '../base/isArray'
-import  clone from '../base/clone'
+var arrayEach = require('../array/arrayEach')
+var keys = require('../base/keys')
+var isArray = require('../base/isArray')
+var clone = require('../base/clone')
 
 var objectAssignFns = Object.assign
 
@@ -40,4 +40,4 @@ var assign = function (target) {
   return target
 }
 
-export default assign
+module.exports = assign

@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 获取一个全局唯一标识
@@ -6,8 +6,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function uniqueId(prefix?: string): string;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 获取一个全局唯一标识
      * @param prefix 自定义前缀

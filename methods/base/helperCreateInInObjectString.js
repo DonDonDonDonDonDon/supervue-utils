@@ -6,4 +6,4 @@ function helperCreateInInObjectString (type) {
   }
 }
 
-export default helperCreateInInObjectString
+module.exports = helperCreateInInObjectString

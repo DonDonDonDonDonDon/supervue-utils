@@ -1,4 +1,4 @@
-import  helperCreateToNumber from './helperCreateToNumber'
+var helperCreateToNumber = require('./helperCreateToNumber')
 
 /**
  * 转数值
@@ -8,4 +8,4 @@ import  helperCreateToNumber from './helperCreateToNumber'
  */
 var toNumber = helperCreateToNumber(parseFloat)
 
-export default toNumber
+module.exports = toNumber

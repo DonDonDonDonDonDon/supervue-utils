@@ -1,4 +1,4 @@
-import  isNull from '../base/isNull'
+var isNull = require('../base/isNull')
 
 /**
  * 返回一个获取对象属性的函数
@@ -12,4 +12,4 @@ function property (name, defs) {
   }
 }
 
-export default property
+module.exports = property

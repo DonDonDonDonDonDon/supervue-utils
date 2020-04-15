@@ -1,6 +1,6 @@
-import  helperNumberDecimal from './helperNumberDecimal'
-import  helperNumString from './helperNumString'
-import  multiply from './multiply'
+var helperNumberDecimal = require('./helperNumberDecimal')
+var helperNumString = require('./helperNumString')
+var multiply = require('./multiply')
 
 function helperNumberDivide (divisor, dividend) {
   var str1 = helperNumString(divisor)
@@ -13,4 +13,4 @@ function helperNumberDivide (divisor, dividend) {
   return multiply(str1.replace('.', '') / str2.replace('.', ''), isMinus ? 1 / multiplicand : multiplicand)
 }
 
-export default helperNumberDivide
+module.exports = helperNumberDivide

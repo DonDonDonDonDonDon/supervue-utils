@@ -1,5 +1,5 @@
-import  isArray from './isArray'
-import  hasOwnProp from './hasOwnProp'
+var isArray = require('./isArray')
+var hasOwnProp = require('./hasOwnProp')
 
 function helperCreateIndexOf (name, callback) {
   return function (obj, val) {
@@ -22,4 +22,4 @@ function helperCreateIndexOf (name, callback) {
   }
 }
 
-export default helperCreateIndexOf
+module.exports = helperCreateIndexOf

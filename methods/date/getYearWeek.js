@@ -1,8 +1,8 @@
-import  staticDayTime from '../static/staticDayTime'
+var staticDayTime = require('../static/staticDayTime')
 
-import  toStringDate from './toStringDate'
+var toStringDate = require('./toStringDate')
 
-import  isDate from '../base/isDate'
+var isDate = require('../base/isDate')
 
 /**
   * 返回某个年份的第几周
@@ -21,4 +21,4 @@ function getYearWeek (date) {
   return date
 }
 
-export default getYearWeek
+module.exports = getYearWeek

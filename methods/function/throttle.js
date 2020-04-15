@@ -47,4 +47,4 @@ function throttle (callback, wait, options) {
   return throttled
 }
 
-export default throttle
+module.exports = throttle

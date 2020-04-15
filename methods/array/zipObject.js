@@ -1,5 +1,5 @@
-import  values from '../base/values'
-import  each from '../base/each'
+var values = require('../base/values')
+var each = require('../base/each')
 
 /**
  * 根据键数组、值数组对转换为对象
@@ -17,4 +17,4 @@ function zipObject (props, arr) {
   return result
 }
 
-export default zipObject
+module.exports = zipObject

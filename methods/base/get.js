@@ -1,9 +1,9 @@
-import  staticHGKeyRE from '../static/staticHGKeyRE'
+var staticHGKeyRE = require('../static/staticHGKeyRE')
 
-import  helperGetHGSKeys from './helperGetHGSKeys'
-import  hasOwnProp from './hasOwnProp'
-import  isUndefined from './isUndefined'
-import  eqNull from './eqNull'
+var helperGetHGSKeys = require('./helperGetHGSKeys')
+var hasOwnProp = require('./hasOwnProp')
+var isUndefined = require('./isUndefined')
+var eqNull = require('./eqNull')
 
 /**
  * 获取对象的属性的值，如果值为 undefined，则返回默认值
@@ -50,4 +50,4 @@ function pathGet (obj, property) {
   }
 }
 
-export default get
+module.exports = get

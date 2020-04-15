@@ -1,3 +1,3 @@
 var staticStrLast = 'last'
 
-export default staticStrLast
+module.exports = staticStrLast

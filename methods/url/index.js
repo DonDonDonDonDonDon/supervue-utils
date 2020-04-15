@@ -1,8 +1,8 @@
 'use strict'
 
-import  unserialize from './unserialize'
-import  parseUrl from './parseUrl'
-import  serialize from './serialize'
+var unserialize = require('./unserialize')
+var parseUrl = require('./parseUrl')
+var serialize = require('./serialize')
 
 var urlExports = {
   parseUrl: parseUrl,
@@ -10,4 +10,4 @@ var urlExports = {
   unserialize: unserialize
 }
 
-export default urlExports
+module.exports = urlExports

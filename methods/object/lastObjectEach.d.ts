@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export declare function lastObjectEachIterate(item: any, key: string, obj: any): any;
 
@@ -10,8 +10,8 @@ export declare function lastObjectEachIterate(item: any, key: string, obj: any):
  */
 export declare function lastObjectEach(obj: any, iteratee: typeof lastObjectEachIterate, context ?: any): void;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 对象迭代器,从最后开始迭代
      * @param obj 对象

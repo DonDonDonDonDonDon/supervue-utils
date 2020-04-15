@@ -1,4 +1,4 @@
-import  values from './values'
+var values = require('./values')
 
 /**
   * 获取对象最后一个值
@@ -11,4 +11,4 @@ function last (obj) {
   return list[list.length - 1]
 }
 
-export default last
+module.exports = last

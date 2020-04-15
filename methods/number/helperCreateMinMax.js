@@ -1,8 +1,8 @@
-import  isFunction from '../base/isFunction'
-import  eqNull from '../base/eqNull'
-import  get from '../base/get'
+var isFunction = require('../base/isFunction')
+var eqNull = require('../base/eqNull')
+var get = require('../base/get')
 
-import  arrayEach from '../array/arrayEach'
+var arrayEach = require('../array/arrayEach')
 
 function helperCreateMinMax (handle) {
   return function (arr, iterate) {
@@ -23,4 +23,4 @@ function helperCreateMinMax (handle) {
   }
 }
 
-export default helperCreateMinMax
+module.exports = helperCreateMinMax

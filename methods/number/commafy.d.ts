@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export interface CommafyOptions {
   /**
@@ -22,8 +22,8 @@ export interface CommafyOptions {
  */
 export declare function commafy(num: string | number, options?: CommafyOptions): string;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 数值千分位分隔符、小数点
      * @param num 数值/字符串

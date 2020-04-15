@@ -1,4 +1,4 @@
-import  helperCreateInInObjectString from './helperCreateInInObjectString'
+var helperCreateInInObjectString = require('./helperCreateInInObjectString')
 
 /**
   * 判断是否Error对象
@@ -8,4 +8,4 @@ import  helperCreateInInObjectString from './helperCreateInInObjectString'
   */
 var isError = helperCreateInInObjectString('Error')
 
-export default isError
+module.exports = isError

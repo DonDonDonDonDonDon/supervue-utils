@@ -1,5 +1,5 @@
 /* eslint-disable valid-typeof */
-import  staticStrUndefined from '../static/staticStrUndefined'
+var staticStrUndefined = require('../static/staticStrUndefined')
 
 /**
   * 判断是否WeakMap对象
@@ -12,4 +12,4 @@ function isWeakMap (obj) {
   return supportWeakMap && obj instanceof WeakMap
 }
 
-export default isWeakMap
+module.exports = isWeakMap

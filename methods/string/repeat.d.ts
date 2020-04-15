@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 将字符串重复 n 次
@@ -7,8 +7,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function repeat(str: string, count: number): string;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 将字符串重复 n 次
      * @param str 字符串

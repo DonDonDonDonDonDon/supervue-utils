@@ -1,4 +1,4 @@
-import  slice from '../array/slice'
+var slice = require('../array/slice')
 
 /**
   * 创建一个函数, 调用次数不超过 count 次之前执行回调并将所有结果记住后返回
@@ -21,4 +21,4 @@ function before (count, callback, context) {
   }
 }
 
-export default before
+module.exports = before

@@ -1,4 +1,4 @@
-import  helperCreateIterateHandle from './helperCreateIterateHandle'
+var helperCreateIterateHandle = require('./helperCreateIterateHandle')
 
 /**
   * 查找匹配第一条数据
@@ -10,4 +10,4 @@ import  helperCreateIterateHandle from './helperCreateIterateHandle'
   */
 var find = helperCreateIterateHandle('find', 1, 3, true)
 
-export default find
+module.exports = find

@@ -1,5 +1,5 @@
-import  padEnd from '../string/padEnd'
-import  helperFixedNumber from './helperFixedNumber'
+var padEnd = require('../string/padEnd')
+var helperFixedNumber = require('./helperFixedNumber')
 
 /**
  * 和 Number.toFixed 类似，区别就是不会对小数进行四舍五入，结果返回字符串
@@ -16,4 +16,4 @@ function toFixedString (str, digits) {
   return rest
 }
 
-export default toFixedString
+module.exports = toFixedString

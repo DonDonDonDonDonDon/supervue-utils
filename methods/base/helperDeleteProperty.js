@@ -6,4 +6,4 @@ function helperDeleteProperty (obj, property) {
   }
 }
 
-export default helperDeleteProperty
+module.exports = helperDeleteProperty

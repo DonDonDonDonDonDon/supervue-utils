@@ -1,11 +1,11 @@
-import  staticStrFirst from '../static/staticStrFirst'
-import  staticStrLast from '../static/staticStrLast'
+var staticStrFirst = require('../static/staticStrFirst')
+var staticStrLast = require('../static/staticStrLast')
 
-import  helperGetDateFullYear from './helperGetDateFullYear'
+var helperGetDateFullYear = require('./helperGetDateFullYear')
 
-import  getWhatMonth from './getWhatMonth'
-import  toStringDate from './toStringDate'
-import  isDate from '../base/isDate'
+var getWhatMonth = require('./getWhatMonth')
+var toStringDate = require('./toStringDate')
+var isDate = require('../base/isDate')
 
 /**
   * 返回前几年或后几年的日期
@@ -37,4 +37,4 @@ function getWhatYear (date, year, month) {
   return date
 }
 
-export default getWhatYear
+module.exports = getWhatYear

@@ -1,12 +1,12 @@
-import  staticDayTime from '../static/staticDayTime'
-import  staticWeekTime from '../static/staticWeekTime'
-import  staticParseInt from '../static/staticParseInt'
+var staticDayTime = require('../static/staticDayTime')
+var staticWeekTime = require('../static/staticWeekTime')
+var staticParseInt = require('../static/staticParseInt')
 
-import  helperGetDateTime from './helperGetDateTime'
+var helperGetDateTime = require('./helperGetDateTime')
 
-import  toStringDate from './toStringDate'
+var toStringDate = require('./toStringDate')
 
-import  isDate from '../base/isDate'
+var isDate = require('../base/isDate')
 
 /**
   * 返回前几周或后几周的星期几
@@ -32,4 +32,4 @@ function getWhatWeek (date, week, day) {
   return date
 }
 
-export default getWhatWeek
+module.exports = getWhatWeek

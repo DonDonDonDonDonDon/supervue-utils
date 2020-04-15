@@ -1,14 +1,14 @@
-import  setupDefaults from '../setupDefaults'
+var setupDefaults = require('../setupDefaults')
 
-import  staticParseInt from '../static/staticParseInt'
+var staticParseInt = require('../static/staticParseInt')
 
-import  helperGetUTCDateTime from './helperGetUTCDateTime'
-import  helperGetDateTime from './helperGetDateTime'
+var helperGetUTCDateTime = require('./helperGetUTCDateTime')
+var helperGetDateTime = require('./helperGetDateTime')
 
-import  arrayEach from '../array/arrayEach'
+var arrayEach = require('../array/arrayEach')
 
-import  isString from '../base/isString'
-import  isDate from '../base/isDate'
+var isString = require('../base/isString')
+var isDate = require('../base/isDate')
 
 var dateFormatRules = [
   { rules: [['yyyy', 4]] },
@@ -86,4 +86,4 @@ function toStringDate (str, format) {
   return !rest || isNaN(helperGetDateTime(rest)) ? 'Invalid Date' : rest
 }
 
-export default toStringDate
+module.exports = toStringDate

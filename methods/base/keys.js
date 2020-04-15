@@ -1,4 +1,4 @@
-import  helperCreateGetObjects from './helperCreateGetObjects'
+var helperCreateGetObjects = require('./helperCreateGetObjects')
 
 /**
   * 获取对象所有属性
@@ -8,4 +8,4 @@ import  helperCreateGetObjects from './helperCreateGetObjects'
   */
 var keys = helperCreateGetObjects('keys', 1)
 
-export default keys
+module.exports = keys

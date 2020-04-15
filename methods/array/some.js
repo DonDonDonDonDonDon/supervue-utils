@@ -1,4 +1,4 @@
-import  helperCreateIterateHandle from './helperCreateIterateHandle'
+var helperCreateIterateHandle = require('./helperCreateIterateHandle')
 
 /**
   * 对象中的值中的每一项运行给定函数,如果函数对任一项返回true,则返回true,否则返回false
@@ -10,4 +10,4 @@ import  helperCreateIterateHandle from './helperCreateIterateHandle'
   */
 var some = helperCreateIterateHandle('some', 1, 0, true, false)
 
-export default some
+module.exports = some

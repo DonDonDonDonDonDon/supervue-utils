@@ -1,19 +1,19 @@
 'use strict'
 
-import  random from './random'
-import  max from './max'
-import  min from './min'
-import  commafy from './commafy'
-import  toFixedString from './toFixedString'
-import  toFixedNumber from './toFixedNumber'
-import  toInteger from './toInteger'
-import  toNumber from './toNumber'
-import  add from './add'
-import  subtract from './subtract'
-import  multiply from './multiply'
-import  divide from './divide'
-import  sum from './sum'
-import  mean from './mean'
+var random = require('./random')
+var max = require('./max')
+var min = require('./min')
+var commafy = require('./commafy')
+var toFixedString = require('./toFixedString')
+var toFixedNumber = require('./toFixedNumber')
+var toInteger = require('./toInteger')
+var toNumber = require('./toNumber')
+var add = require('./add')
+var subtract = require('./subtract')
+var multiply = require('./multiply')
+var divide = require('./divide')
+var sum = require('./sum')
+var mean = require('./mean')
 
 var numberExports = {
   random: random,
@@ -32,4 +32,4 @@ var numberExports = {
   mean
 }
 
-export default numberExports
+module.exports = numberExports

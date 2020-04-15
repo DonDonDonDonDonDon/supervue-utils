@@ -1,13 +1,13 @@
 'use strict'
 
-import  property from './property'
-import  bind from './bind'
-import  once from './once'
-import  after from './after'
-import  before from './before'
-import  throttle from './throttle'
-import  debounce from './debounce'
-import  delay from './delay'
+var property = require('./property')
+var bind = require('./bind')
+var once = require('./once')
+var after = require('./after')
+var before = require('./before')
+var throttle = require('./throttle')
+var debounce = require('./debounce')
+var delay = require('./delay')
 
 var functionExports = {
   property: property,
@@ -20,4 +20,4 @@ var functionExports = {
   delay: delay
 }
 
-export default functionExports
+module.exports = functionExports

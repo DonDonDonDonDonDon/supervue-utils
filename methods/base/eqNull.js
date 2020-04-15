@@ -1,5 +1,5 @@
-import  isNull from './isNull'
-import  isUndefined from './isUndefined'
+var isNull = require('./isNull')
+var isUndefined = require('./isUndefined')
 
 /**
  * 判断是否 undefined 和 null
@@ -10,4 +10,4 @@ function eqNull (obj) {
   return isNull(obj) || isUndefined(obj)
 }
 
-export default eqNull
+module.exports = eqNull

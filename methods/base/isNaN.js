@@ -1,8 +1,8 @@
-import  isNumber from './isNumber'
+var isNumber = require('./isNumber')
 
 /* eslint-disable eqeqeq */
 function isNumberNaN (obj) {
   return isNumber(obj) && isNaN(obj)
 }
 
-export default isNumberNaN
+module.exports = isNumberNaN

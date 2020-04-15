@@ -6,4 +6,4 @@ function helperNumString (num) {
   return '' + num
 }
 
-export default helperNumString
+module.exports = helperNumString

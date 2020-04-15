@@ -1,4 +1,4 @@
-import  each from '../base/each'
+var each = require('../base/each')
 
 /**
   * 根据回调过滤数据
@@ -23,4 +23,4 @@ function filter (obj, iterate, context) {
   return result
 }
 
-export default filter
+module.exports = filter

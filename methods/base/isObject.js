@@ -1,4 +1,4 @@
-import  helperCreateInTypeof from './helperCreateInTypeof'
+var helperCreateInTypeof = require('./helperCreateInTypeof')
 
 /**
   * 判断是否Object对象
@@ -8,4 +8,4 @@ import  helperCreateInTypeof from './helperCreateInTypeof'
   */
 var isObject = helperCreateInTypeof('object')
 
-export default isObject
+module.exports = isObject

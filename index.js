@@ -1,2 +1,1 @@
-import SupervueUtils from "./methods";
-export default SupervueUtils;
+module.exports = require('./methods')

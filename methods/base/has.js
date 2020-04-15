@@ -1,8 +1,8 @@
-import  staticHGKeyRE from '../static/staticHGKeyRE'
+var staticHGKeyRE = require('../static/staticHGKeyRE')
 
-import  helperGetHGSKeys from './helperGetHGSKeys'
+var helperGetHGSKeys = require('./helperGetHGSKeys')
 
-import  hasOwnProp from './hasOwnProp'
+var hasOwnProp = require('./hasOwnProp')
 
 /**
  * 检查键、路径是否是该对象的属性
@@ -59,4 +59,4 @@ function has (obj, property) {
   return false
 }
 
-export default has
+module.exports = has

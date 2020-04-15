@@ -1,8 +1,8 @@
-import  helperNumberDivide from './helperNumberDivide'
+var helperNumberDivide = require('./helperNumberDivide')
 
-import  getSize from '../base/getSize'
+var getSize = require('../base/getSize')
 
-import  sum from './sum'
+var sum = require('./sum')
 
 /**
   * 求平均值函数
@@ -16,4 +16,4 @@ function mean (array, iterate, context) {
   return helperNumberDivide(sum(array, iterate, context), getSize(array))
 }
 
-export default mean
+module.exports = mean

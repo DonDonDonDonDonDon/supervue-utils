@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export declare function mapIterate(item: any, index: number, list: any[]): any;
 
@@ -10,8 +10,8 @@ export declare function mapIterate(item: any, index: number, list: any[]): any;
  */
 export declare function map(array: any[], iteratee: typeof mapIterate, context?: any): any[];
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 指定方法后的返回值组成的新数组
      * @param array 数组

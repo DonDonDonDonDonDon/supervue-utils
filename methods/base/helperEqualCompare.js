@@ -1,13 +1,13 @@
-import  isNumber from './isNumber'
-import  isArray from './isArray'
-import  isString from './isString'
-import  isRegExp from './isRegExp'
-import  isDate from './isDate'
-import  isBoolean from './isBoolean'
-import  isUndefined from './isUndefined'
-import  keys from './keys'
+var isNumber = require('./isNumber')
+var isArray = require('./isArray')
+var isString = require('./isString')
+var isRegExp = require('./isRegExp')
+var isDate = require('./isDate')
+var isBoolean = require('./isBoolean')
+var isUndefined = require('./isUndefined')
+var keys = require('./keys')
 
-import  every from '../array/every'
+var every = require('../array/every')
 
 function helperEqualCompare (val1, val2, compare, func, key, obj1, obj2) {
   if (val1 === val2) {
@@ -40,4 +40,4 @@ function helperEqualCompare (val1, val2, compare, func, key, obj1, obj2) {
   return compare(val1, val2, key, obj1, obj2)
 }
 
-export default helperEqualCompare
+module.exports = helperEqualCompare

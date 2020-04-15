@@ -1,5 +1,5 @@
-import  uniq from './uniq'
-import  toArray from './toArray'
+var uniq = require('./uniq')
+var toArray = require('./toArray')
 
 /**
   * 将多个数的值返回唯一的并集数组
@@ -18,4 +18,4 @@ function union () {
   return uniq(result)
 }
 
-export default union
+module.exports = union

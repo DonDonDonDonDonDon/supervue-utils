@@ -1,10 +1,10 @@
-import  keys from './keys'
+var keys = require('./keys')
 
-import  slice from '../array/slice'
-import  includes from '../array/includes'
-import  arrayEach from '../array/arrayEach'
+var slice = require('../array/slice')
+var includes = require('../array/includes')
+var arrayEach = require('../array/arrayEach')
 
-import  assign from '../object/assign'
+var assign = require('../object/assign')
 
 /**
   * 将一个或者多个对象值解构到目标对象
@@ -26,4 +26,4 @@ function destructuring (destination, sources) {
   return destination
 }
 
-export default destructuring
+module.exports = destructuring

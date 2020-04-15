@@ -1,6 +1,6 @@
-import  staticStrUndefined from '../static/staticStrUndefined'
+var staticStrUndefined = require('../static/staticStrUndefined')
 
-import  helperCreateInTypeof from './helperCreateInTypeof'
+var helperCreateInTypeof = require('./helperCreateInTypeof')
 
 /**
   * 判断是否Undefined
@@ -10,4 +10,4 @@ import  helperCreateInTypeof from './helperCreateInTypeof'
   */
 var isUndefined = helperCreateInTypeof(staticStrUndefined)
 
-export default isUndefined
+module.exports = isUndefined

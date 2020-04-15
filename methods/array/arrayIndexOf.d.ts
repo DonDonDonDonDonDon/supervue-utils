@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 返回数组第一个索引值
@@ -7,8 +7,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function arrayIndexOf(obj: any, val: any): number;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 返回数组第一个索引值
      * @param obj 数组

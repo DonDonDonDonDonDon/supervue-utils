@@ -1,4 +1,4 @@
-import  eachTree from './eachTree'
+var eachTree = require('./eachTree')
 
 /**
   * 从树结构中根据回调过滤数据
@@ -21,4 +21,4 @@ function filterTree (obj, iterate, options, context) {
   return result
 }
 
-export default filterTree
+module.exports = filterTree

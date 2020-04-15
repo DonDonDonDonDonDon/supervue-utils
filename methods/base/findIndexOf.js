@@ -1,4 +1,4 @@
-import  helperCreateiterateIndexOf from './helperCreateiterateIndexOf'
+var helperCreateiterateIndexOf = require('./helperCreateiterateIndexOf')
 
 /**
   * 返回对象第一个索引值
@@ -17,4 +17,4 @@ var findIndexOf = helperCreateiterateIndexOf(function (obj, iterate, context) {
   return -1
 })
 
-export default findIndexOf
+module.exports = findIndexOf

@@ -1,4 +1,4 @@
-import  map from './map'
+var map = require('./map')
 
 /**
  * 将对象或者伪数组转为新数组
@@ -12,4 +12,4 @@ function toArray (array) {
   })
 }
 
-export default toArray
+module.exports = toArray

@@ -1,9 +1,9 @@
-import  keys from './keys'
-import  findIndexOf from './findIndexOf'
-import  isEqual from './isEqual'
+var keys = require('./keys')
+var findIndexOf = require('./findIndexOf')
+var isEqual = require('./isEqual')
 
-import  some from '../array/some'
-import  includeArrays from '../array/includeArrays'
+var some = require('../array/some')
+var includeArrays = require('../array/includeArrays')
 
 /**
  * 判断属性中的键和值是否包含在对象中
@@ -29,4 +29,4 @@ function isMatch (obj, source) {
   return isEqual(obj, source)
 }
 
-export default isMatch
+module.exports = isMatch

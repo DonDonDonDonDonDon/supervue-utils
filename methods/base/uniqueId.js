@@ -9,4 +9,4 @@ function uniqueId (prefix) {
   return [prefix, ++__uniqueId].join('')
 }
 
-export default uniqueId
+module.exports = uniqueId

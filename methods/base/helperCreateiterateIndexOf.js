@@ -1,7 +1,7 @@
-import  isFunction from './isFunction'
-import  isString from './isString'
-import  isArray from './isArray'
-import  hasOwnProp from './hasOwnProp'
+var isFunction = require('./isFunction')
+var isString = require('./isString')
+var isArray = require('./isArray')
+var hasOwnProp = require('./hasOwnProp')
 
 function helperCreateiterateIndexOf (callback) {
   return function (obj, iterate, context) {
@@ -21,4 +21,4 @@ function helperCreateiterateIndexOf (callback) {
   }
 }
 
-export default helperCreateiterateIndexOf
+module.exports = helperCreateiterateIndexOf

@@ -1,4 +1,4 @@
-import  values from './values'
+var values = require('./values')
 
 /**
   * 获取对象第一个值
@@ -10,4 +10,4 @@ function first (obj) {
   return values(obj)[0]
 }
 
-export default first
+module.exports = first

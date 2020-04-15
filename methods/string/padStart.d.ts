@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 用指定字符从前面开始补全字符串
@@ -8,8 +8,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function padStart(str: string, targetLength: number, padString?: string): string;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 用指定字符从前面开始补全字符串
      * @param str 字符串

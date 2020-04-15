@@ -1,4 +1,4 @@
-import  helperCreateInTypeof from './helperCreateInTypeof'
+var helperCreateInTypeof = require('./helperCreateInTypeof')
 
 /**
   * 判断是否String对象
@@ -8,4 +8,4 @@ import  helperCreateInTypeof from './helperCreateInTypeof'
   */
 var isString = helperCreateInTypeof('string')
 
-export default isString
+module.exports = isString

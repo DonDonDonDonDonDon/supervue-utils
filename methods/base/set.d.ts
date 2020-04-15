@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 设置对象属性上的值。如果属性不存在则创建它
@@ -8,8 +8,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function set(obj: any, property: string | string[], value: any): void;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 设置对象属性上的值。如果属性不存在则创建它
      * @param obj 对象

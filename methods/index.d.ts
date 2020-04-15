@@ -1,7 +1,7 @@
-import SupervueUtils from './supervue-utils'
+import XEUtils from './xe-utils'
 
 // core
-export * from './supervue-utils'
+export * from './xe-utils'
 
 // object
 export * from './object/assign'
@@ -183,4 +183,4 @@ export * from './browse/locat'
 export * from './browse/cookie'
 export * from './browse/browse'
 
-export default SupervueUtils
+export default XEUtils

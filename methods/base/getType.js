@@ -1,9 +1,9 @@
-import  isSymbol from './isSymbol'
-import  isDate from './isDate'
-import  isArray from './isArray'
-import  isRegExp from './isRegExp'
-import  isError from './isError'
-import  isNull from './isNull'
+var isSymbol = require('./isSymbol')
+var isDate = require('./isDate')
+var isArray = require('./isArray')
+var isRegExp = require('./isRegExp')
+var isError = require('./isError')
+var isNull = require('./isNull')
 
 /**
   * 获取对象类型
@@ -33,4 +33,4 @@ function getType (obj) {
   return typeof obj
 }
 
-export default getType
+module.exports = getType

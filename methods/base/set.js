@@ -1,8 +1,8 @@
-import  staticParseInt from '../static/staticParseInt'
+var staticParseInt = require('../static/staticParseInt')
 
-import  helperGetHGSKeys from './helperGetHGSKeys'
+var helperGetHGSKeys = require('./helperGetHGSKeys')
 
-import  hasOwnProp from './hasOwnProp'
+var hasOwnProp = require('./hasOwnProp')
 
 var sKeyRE = /(.+)\[(\d+)\]$/
 
@@ -53,4 +53,4 @@ function set (obj, property, value) {
   return obj
 }
 
-export default set
+module.exports = set

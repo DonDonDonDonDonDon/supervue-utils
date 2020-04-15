@@ -1,5 +1,5 @@
-import  isObject from './isObject'
-import  isString from './isString'
+var isObject = require('./isObject')
+var isString = require('./isString')
 
 /**
   * 字符串转JSON
@@ -18,4 +18,4 @@ function toStringJSON (str) {
   return {}
 }
 
-export default toStringJSON
+module.exports = toStringJSON

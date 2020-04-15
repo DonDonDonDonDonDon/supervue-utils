@@ -1,9 +1,9 @@
-import  staticStrUndefined from '../static/staticStrUndefined'
-import  staticDocument from '../static/staticDocument'
-import  staticWindow from '../static/staticWindow'
+var staticStrUndefined = require('../static/staticStrUndefined')
+var staticDocument = require('../static/staticDocument')
+var staticWindow = require('../static/staticWindow')
 
-import  assign from '../object/assign'
-import  arrayEach from '../array/arrayEach'
+var assign = require('../object/assign')
+var arrayEach = require('../array/arrayEach')
 
 /* eslint-disable valid-typeof */
 function isBrowseStorage (storage) {
@@ -60,4 +60,4 @@ function browse () {
   return result
 }
 
-export default browse
+module.exports = browse

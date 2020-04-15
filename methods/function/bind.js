@@ -1,4 +1,4 @@
-import  slice from '../array/slice'
+var slice = require('../array/slice')
 
 /**
   * 创建一个绑定上下文的函数
@@ -15,4 +15,4 @@ function bind (callback, context) {
   }
 }
 
-export default bind
+module.exports = bind

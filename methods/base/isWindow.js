@@ -1,4 +1,4 @@
-import  staticWindow from '../static/staticWindow'
+var staticWindow = require('../static/staticWindow')
 
 /**
   * 判断是否Window对象
@@ -10,4 +10,4 @@ function isWindow (obj) {
   return staticWindow && !!(obj && obj === obj.window)
 }
 
-export default isWindow
+module.exports = isWindow

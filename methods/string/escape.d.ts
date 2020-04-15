@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 转义HTML字符串，替换&, <, >, ", ', \`字符
@@ -6,8 +6,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function escape(str: string): string;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 转义HTML字符串，替换&, <, >, ", ', \`字符
      * @param str 字符串

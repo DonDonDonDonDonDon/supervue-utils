@@ -1,3 +1,3 @@
 var staticParseInt = parseInt
 
-export default staticParseInt
+module.exports = staticParseInt

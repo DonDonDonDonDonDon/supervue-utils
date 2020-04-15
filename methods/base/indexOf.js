@@ -1,6 +1,6 @@
-import  helperCreateIndexOf from './helperCreateIndexOf'
+var helperCreateIndexOf = require('./helperCreateIndexOf')
 
-import  arrayIndexOf from '../array/arrayIndexOf'
+var arrayIndexOf = require('../array/arrayIndexOf')
 
 /**
   * 返回对象第一个索引值
@@ -11,4 +11,4 @@ import  arrayIndexOf from '../array/arrayIndexOf'
   */
 var indexOf = helperCreateIndexOf('indexOf', arrayIndexOf)
 
-export default indexOf
+module.exports = indexOf

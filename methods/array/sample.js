@@ -1,4 +1,4 @@
-import  shuffle from './shuffle'
+var shuffle = require('./shuffle')
 
 /**
   * 从一个数组中随机返回几个元素
@@ -18,4 +18,4 @@ function sample (array, number) {
   return result
 }
 
-export default sample
+module.exports = sample

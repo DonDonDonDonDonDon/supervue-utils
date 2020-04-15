@@ -1,13 +1,13 @@
-import  staticStrFirst from '../static/staticStrFirst'
-import  staticStrLast from '../static/staticStrLast'
-import  staticParseInt from '../static/staticParseInt'
+var staticStrFirst = require('../static/staticStrFirst')
+var staticStrLast = require('../static/staticStrLast')
+var staticParseInt = require('../static/staticParseInt')
 
-import  helperGetDateFullYear from './helperGetDateFullYear'
-import  helperGetDateMonth from './helperGetDateMonth'
-import  helperGetDateTime from './helperGetDateTime'
+var helperGetDateFullYear = require('./helperGetDateFullYear')
+var helperGetDateMonth = require('./helperGetDateMonth')
+var helperGetDateTime = require('./helperGetDateTime')
 
-import  toStringDate from './toStringDate'
-import  isDate from '../base/isDate'
+var toStringDate = require('./toStringDate')
+var isDate = require('../base/isDate')
 
 /**
   * 返回前几天或后几天的日期
@@ -30,4 +30,4 @@ function getWhatDay (date, day, mode) {
   return date
 }
 
-export default getWhatDay
+module.exports = getWhatDay

@@ -1,6 +1,6 @@
-import  groupBy from './groupBy'
+var groupBy = require('./groupBy')
 
-import  objectEach from '../object/objectEach'
+var objectEach = require('../object/objectEach')
 
 /**
   * 集合分组统计,返回各组中对象的数量统计
@@ -18,4 +18,4 @@ function countBy (obj, iterate, context) {
   return result
 }
 
-export default countBy
+module.exports = countBy

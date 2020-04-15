@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 求和函数，将数值相加
@@ -8,8 +8,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function sum(obj: any, iteratee?: Function, context?: any): number;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 求和函数，将数值相加
      * @param obj 对象/数组

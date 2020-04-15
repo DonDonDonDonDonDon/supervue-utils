@@ -1,4 +1,4 @@
-import  toValString from './toString'
+var toValString = require('./toString')
 
 /**
   * 去除字符串左边的空格
@@ -10,4 +10,4 @@ function trimLeft (str) {
   return str && str.trimLeft ? str.trimLeft() : toValString(str).replace(/^[\s\uFEFF\xA0]+/g, '')
 }
 
-export default trimLeft
+module.exports = trimLeft

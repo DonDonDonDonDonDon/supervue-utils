@@ -1,7 +1,7 @@
-import  isNumber from './isNumber'
+var isNumber = require('./isNumber')
 
 function isNumberFinite (obj) {
   return isNumber(obj) && isFinite(obj)
 }
 
-export default isNumberFinite
+module.exports = isNumberFinite

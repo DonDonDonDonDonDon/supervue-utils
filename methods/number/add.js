@@ -1,5 +1,5 @@
-import  helperNumberAdd from './helperNumberAdd'
-import  toNumber from './toNumber'
+var helperNumberAdd = require('./helperNumberAdd')
+var toNumber = require('./toNumber')
 
 /**
  * 加法运算
@@ -12,4 +12,4 @@ function add (num1, num2) {
   return helperNumberAdd(toNumber(num1), toNumber(num2))
 }
 
-export default add
+module.exports = add

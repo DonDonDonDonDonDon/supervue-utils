@@ -1,5 +1,5 @@
-import  helperNumberDivide from './helperNumberDivide'
-import  toNumber from './toNumber'
+var helperNumberDivide = require('./helperNumberDivide')
+var toNumber = require('./toNumber')
 
 /**
  * 除法运算
@@ -12,4 +12,4 @@ function divide (num1, num2) {
   return helperNumberDivide(toNumber(num1), toNumber(num2))
 }
 
-export default divide
+module.exports = divide

@@ -10,4 +10,4 @@ function arrayEach (obj, iterate, context) {
   }
 }
 
-export default arrayEach
+module.exports = arrayEach

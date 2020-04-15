@@ -1,4 +1,4 @@
-import  toDateString from './toDateString'
+var toDateString = require('./toDateString')
 
 /**
  * 比较两个日期
@@ -15,4 +15,4 @@ function isDateSame (date1, date2, format) {
   return false
 }
 
-export default isDateSame
+module.exports = isDateSame

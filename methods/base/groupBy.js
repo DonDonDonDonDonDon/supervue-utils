@@ -1,8 +1,8 @@
-import  isEmpty from './isEmpty'
-import  isObject from './isObject'
-import  isFunction from './isFunction'
-import  property from '../function/property'
-import  each from './each'
+var isEmpty = require('./isEmpty')
+var isObject = require('./isObject')
+var isFunction = require('./isFunction')
+var property = require('../function/property')
+var each = require('./each')
 
 function createiterateEmpty (iterate) {
   return function () {
@@ -39,4 +39,4 @@ function groupBy (obj, iterate, context) {
   return result
 }
 
-export default groupBy
+module.exports = groupBy

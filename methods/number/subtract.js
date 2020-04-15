@@ -1,6 +1,6 @@
-import  helperNumberDecimal from './helperNumberDecimal'
-import  helperNumString from './helperNumString'
-import  toNumber from './toNumber'
+var helperNumberDecimal = require('./helperNumberDecimal')
+var helperNumString = require('./helperNumString')
+var toNumber = require('./toNumber')
 
 /**
  * 减法运算
@@ -21,4 +21,4 @@ function subtract (num1, num2) {
   return parseFloat(((subtrahend * ratio - minuend * ratio) / ratio).toFixed(precision))
 }
 
-export default subtract
+module.exports = subtract

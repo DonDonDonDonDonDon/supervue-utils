@@ -1,8 +1,8 @@
-import  staticLocation from '../static/staticLocation'
+var staticLocation = require('../static/staticLocation')
 
-import  helperGetLocatOrigin from './helperGetLocatOrigin'
+var helperGetLocatOrigin = require('./helperGetLocatOrigin')
 
-import  lastIndexOf from '../base/lastIndexOf'
+var lastIndexOf = require('../base/lastIndexOf')
 
 function getBaseURL () {
   if (staticLocation) {
@@ -13,4 +13,4 @@ function getBaseURL () {
   return ''
 }
 
-export default getBaseURL
+module.exports = getBaseURL

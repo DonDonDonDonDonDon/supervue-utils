@@ -1,4 +1,4 @@
-import  helperCreateGetObjects from './helperCreateGetObjects'
+var helperCreateGetObjects = require('./helperCreateGetObjects')
 
 /**
   * 获取对象所有值
@@ -8,4 +8,4 @@ import  helperCreateGetObjects from './helperCreateGetObjects'
   */
 var values = helperCreateGetObjects('values', 0)
 
-export default values
+module.exports = values

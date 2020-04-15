@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 获取对象第一个值
@@ -6,8 +6,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function first(obj: any): any;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 获取对象第一个值
      * @param obj 对象

@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 去除字符串左右两边的空格
@@ -6,8 +6,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function trim(str: string): string;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 去除字符串左右两边的空格
      * @param str 字符串

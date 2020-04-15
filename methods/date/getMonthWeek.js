@@ -1,13 +1,13 @@
-import  staticWeekTime from '../static/staticWeekTime'
-import  staticStrFirst from '../static/staticStrFirst'
+var staticWeekTime = require('../static/staticWeekTime')
+var staticStrFirst = require('../static/staticStrFirst')
 
-import  helperGetYMDTime from './helperGetYMDTime'
+var helperGetYMDTime = require('./helperGetYMDTime')
 
-import  getWhatMonth from './getWhatMonth'
-import  toStringDate from './toStringDate'
-import  getWhatWeek from './getWhatWeek'
+var getWhatMonth = require('./getWhatMonth')
+var toStringDate = require('./toStringDate')
+var getWhatWeek = require('./getWhatWeek')
 
-import  isDate from '../base/isDate'
+var isDate = require('../base/isDate')
 
 /**
   * 返回某个月的第几周
@@ -32,4 +32,4 @@ function getMonthWeek (date) {
   return currentDate
 }
 
-export default getMonthWeek
+module.exports = getMonthWeek

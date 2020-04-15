@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 返回某个年份的天数,可以指定前几个年或后几个年，默认当前
@@ -7,8 +7,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function getDayOfYear(date: string | Date | number, year?: number): Date;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 返回某个年份的天数,可以指定前几个年或后几个年，默认当前
      * @param date 字符串/日期/时间戳

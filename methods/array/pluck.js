@@ -1,4 +1,4 @@
-import  map from './map'
+var map = require('./map')
 
 /**
   * 获取数组对象中某属性值，返回一个数组
@@ -11,4 +11,4 @@ function pluck (obj, key) {
   return map(obj, key)
 }
 
-export default pluck
+module.exports = pluck

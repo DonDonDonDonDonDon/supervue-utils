@@ -1,8 +1,8 @@
-import  helperGetDateTime from './helperGetDateTime'
-import  helperGetYMD from './helperGetYMD'
+var helperGetDateTime = require('./helperGetDateTime')
+var helperGetYMD = require('./helperGetYMD')
 
 function helperGetYMDTime (date) {
   return helperGetDateTime(helperGetYMD(date))
 }
 
-export default helperGetYMDTime
+module.exports = helperGetYMDTime

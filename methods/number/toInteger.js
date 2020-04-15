@@ -1,6 +1,6 @@
-import  staticParseInt from '../static/staticParseInt'
+var staticParseInt = require('../static/staticParseInt')
 
-import  helperCreateToNumber from './helperCreateToNumber'
+var helperCreateToNumber = require('./helperCreateToNumber')
 
 /**
  * 转整数
@@ -10,4 +10,4 @@ import  helperCreateToNumber from './helperCreateToNumber'
  */
 var toInteger = helperCreateToNumber(staticParseInt)
 
-export default toInteger
+module.exports = toInteger

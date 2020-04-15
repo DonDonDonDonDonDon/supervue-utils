@@ -1,5 +1,5 @@
-import  staticDayTime from './staticDayTime'
+var staticDayTime = require('./staticDayTime')
 
 var staticWeekTime = staticDayTime * 7
 
-export default staticWeekTime
+module.exports = staticWeekTime

@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export declare function isEqualWithFunc(val1: any, val2: any, key: any, obj1: any, obj2: any): any;
 
@@ -10,8 +10,8 @@ export declare function isEqualWithFunc(val1: any, val2: any, key: any, obj1: an
  */
 export declare function isEqualWith(obj1: any, obj2: any, func?: typeof isEqualWithFunc): boolean;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 深度比较两个对象之间的值是否相等，使用自定义比较函数
      * @param obj1 值1

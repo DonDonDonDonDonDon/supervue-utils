@@ -1,5 +1,5 @@
 /* eslint-disable valid-typeof */
-import  staticStrUndefined from '../static/staticStrUndefined'
+var staticStrUndefined = require('../static/staticStrUndefined')
 
 /**
   * 判断是否Symbol对象
@@ -12,4 +12,4 @@ function isSymbol (obj) {
   return supportSymbol && Symbol.isSymbol ? Symbol.isSymbol(obj) : (typeof obj === 'symbol')
 }
 
-export default isSymbol
+module.exports = isSymbol

@@ -10,4 +10,4 @@ function helperCreateToNumber (handle) {
   }
 }
 
-export default helperCreateToNumber
+module.exports = helperCreateToNumber

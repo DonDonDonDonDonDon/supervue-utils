@@ -1,6 +1,6 @@
-import  helperCreateIndexOf from './helperCreateIndexOf'
+var helperCreateIndexOf = require('./helperCreateIndexOf')
 
-import  arrayLastIndexOf from '../array/arrayLastIndexOf'
+var arrayLastIndexOf = require('../array/arrayLastIndexOf')
 
 /**
   * 从最后开始的索引值,返回对象第一个索引值
@@ -11,4 +11,4 @@ import  arrayLastIndexOf from '../array/arrayLastIndexOf'
   */
 var lastIndexOf = helperCreateIndexOf('lastIndexOf', arrayLastIndexOf)
 
-export default lastIndexOf
+module.exports = lastIndexOf

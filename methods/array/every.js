@@ -1,4 +1,4 @@
-import  helperCreateIterateHandle from './helperCreateIterateHandle'
+var helperCreateIterateHandle = require('./helperCreateIterateHandle')
 
 /**
   * 对象中的值中的每一项运行给定函数,如果该函数对每一项都返回true,则返回true,否则返回false
@@ -10,4 +10,4 @@ import  helperCreateIterateHandle from './helperCreateIterateHandle'
   */
 var every = helperCreateIterateHandle('every', 1, 1, false, true)
 
-export default every
+module.exports = every

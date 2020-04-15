@@ -1,8 +1,8 @@
-import  helperCreateTreeFunc from './helperCreateTreeFunc'
+var helperCreateTreeFunc = require('./helperCreateTreeFunc')
 
-import  arrayEach from './arrayEach'
+var arrayEach = require('./arrayEach')
 
-import  assign from '../object/assign'
+var assign = require('../object/assign')
 
 function searchTreeItem (parentAllow, parent, obj, iterate, context, path, node, parseChildren, opts) {
   var paths, nodes, rest, isAllow, hasChild
@@ -42,4 +42,4 @@ var searchTree = helperCreateTreeFunc(function (parent, obj, iterate, context, p
   return searchTreeItem(0, parent, obj, iterate, context, path, nodes, parseChildren, opts)
 })
 
-export default searchTree
+module.exports = searchTree

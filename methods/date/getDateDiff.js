@@ -1,11 +1,11 @@
-import  setupDefaults from '../setupDefaults'
+var setupDefaults = require('../setupDefaults')
 
-import  helperGetDateTime from './helperGetDateTime'
-import  helperNewDate from './helperNewDate'
+var helperGetDateTime = require('./helperGetDateTime')
+var helperNewDate = require('./helperNewDate')
 
-import  toStringDate from './toStringDate'
+var toStringDate = require('./toStringDate')
 
-import  isDate from '../base/isDate'
+var isDate = require('../base/isDate')
 
 /**
   * 返回两个日期之间差距,如果结束日期小于开始日期done为fasle
@@ -45,4 +45,4 @@ function getDateDiff (startDate, endDate, rules) {
   return result
 }
 
-export default getDateDiff
+module.exports = getDateDiff

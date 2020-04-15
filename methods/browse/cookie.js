@@ -1,24 +1,24 @@
-import  setupDefaults from '../setupDefaults'
-import  staticDocument from '../static/staticDocument'
-import  staticDecodeURIComponent from '../static/staticDecodeURIComponent'
-import  staticEncodeURIComponent from '../static/staticEncodeURIComponent'
+var setupDefaults = require('../setupDefaults')
+var staticDocument = require('../static/staticDocument')
+var staticDecodeURIComponent = require('../static/staticDecodeURIComponent')
+var staticEncodeURIComponent = require('../static/staticEncodeURIComponent')
 
-import  isArray from '../base/isArray'
-import  isObject from '../base/isObject'
-import  isDate from '../base/isDate'
-import  isUndefined from '../base/isUndefined'
-import  includes from '../array/includes'
-import  keys from '../base/keys'
+var isArray = require('../base/isArray')
+var isObject = require('../base/isObject')
+var isDate = require('../base/isDate')
+var isUndefined = require('../base/isUndefined')
+var includes = require('../array/includes')
+var keys = require('../base/keys')
 
-import  assign from '../object/assign'
+var assign = require('../object/assign')
 
-import  arrayEach from '../array/arrayEach'
+var arrayEach = require('../array/arrayEach')
 
-import  helperNewDate from '../date/helperNewDate'
-import  helperGetDateTime from '../date/helperGetDateTime'
-import  getWhatYear from '../date/getWhatYear'
-import  getWhatMonth from '../date/getWhatMonth'
-import  getWhatDay from '../date/getWhatDay'
+var helperNewDate = require('../date/helperNewDate')
+var helperGetDateTime = require('../date/helperGetDateTime')
+var getWhatYear = require('../date/getWhatYear')
+var getWhatMonth = require('../date/getWhatMonth')
+var getWhatDay = require('../date/getWhatDay')
 
 function toCookieUnitTime (unit, expires) {
   var num = parseFloat(expires)
@@ -140,4 +140,4 @@ assign(cookie, {
   getJSON: cookie
 })
 
-export default cookie
+module.exports = cookie

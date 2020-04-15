@@ -1,12 +1,12 @@
-import  helperDeleteProperty from './helperDeleteProperty'
+var helperDeleteProperty = require('./helperDeleteProperty')
 
-import  isFunction from './isFunction'
-import  isArray from './isArray'
-import  each from './each'
-import  arrayEach from '../array/arrayEach'
-import  lastEach from './lastEach'
-import  clear from './clear'
-import  eqNull from './eqNull'
+var isFunction = require('./isFunction')
+var isArray = require('./isArray')
+var each = require('./each')
+var arrayEach = require('../array/arrayEach')
+var lastEach = require('./lastEach')
+var clear = require('./clear')
+var eqNull = require('./eqNull')
 
 function pluckProperty (name) {
   return function (obj, key) {
@@ -54,4 +54,4 @@ function remove (obj, iterate, context) {
   return obj
 }
 
-export default remove
+module.exports = remove

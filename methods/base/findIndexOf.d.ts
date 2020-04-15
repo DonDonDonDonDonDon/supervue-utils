@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export declare function findIndexOfIterate(item: any, index: any, obj: any): any;
 
@@ -10,8 +10,8 @@ export declare function findIndexOfIterate(item: any, index: any, obj: any): any
  */
 export declare function findIndexOf(obj: any, iteratee: typeof findIndexOfIterate, context?: any): any;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 返回对象第一个索引值
      * @param obj 对象

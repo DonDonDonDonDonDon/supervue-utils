@@ -1,5 +1,5 @@
-import  each from '../base/each'
-import  includes from './includes'
+var each = require('../base/each')
+var includes = require('./includes')
 
 /**
   * 数组去重
@@ -17,4 +17,4 @@ function uniq (array) {
   return result
 }
 
-export default uniq
+module.exports = uniq

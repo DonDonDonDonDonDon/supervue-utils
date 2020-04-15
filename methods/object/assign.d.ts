@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 浅拷贝一个或者多个对象到目标对象中
@@ -7,8 +7,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
 */
 export declare function assign(target: any, ...sources: any[]): any;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 浅拷贝一个或者多个对象到目标对象中
      * @param target 目标对象

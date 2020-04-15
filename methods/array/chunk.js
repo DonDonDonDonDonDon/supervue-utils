@@ -1,4 +1,4 @@
-import  isArray from '../base/isArray'
+var isArray = require('../base/isArray')
 
 /**
   * 将一个数组分割成大小的组。如果数组不能被平均分配，那么最后一块将是剩下的元素
@@ -25,4 +25,4 @@ function chunk (array, size) {
   return result
 }
 
-export default chunk
+module.exports = chunk

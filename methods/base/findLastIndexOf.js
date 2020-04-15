@@ -1,4 +1,4 @@
-import  helperCreateiterateIndexOf from './helperCreateiterateIndexOf'
+var helperCreateiterateIndexOf = require('./helperCreateiterateIndexOf')
 
 /**
   * 从最后开始的索引值,返回对象第一个索引值
@@ -17,4 +17,4 @@ var findLastIndexOf = helperCreateiterateIndexOf(function (obj, iterate, context
   return -1
 })
 
-export default findLastIndexOf
+module.exports = findLastIndexOf

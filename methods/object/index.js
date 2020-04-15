@@ -1,10 +1,10 @@
 'use strict'
 
-import  assign from './assign'
-import  extend from './extend'
-import  objectEach from './objectEach'
-import  lastObjectEach from './lastObjectEach'
-import  objectMap from './objectMap'
+var assign = require('./assign')
+var extend = require('./extend')
+var objectEach = require('./objectEach')
+var lastObjectEach = require('./lastObjectEach')
+var objectMap = require('./objectMap')
 
 var objectExports = {
   assign: assign,
@@ -14,4 +14,4 @@ var objectExports = {
   lastObjectEach: lastObjectEach
 }
 
-export default objectExports
+module.exports = objectExports

@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 判断是否闰年
@@ -6,8 +6,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function isLeapYear(date?: Date | number | string): boolean;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 判断是否闰年
      * @param date 日期

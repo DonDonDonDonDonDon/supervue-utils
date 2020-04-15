@@ -1,8 +1,8 @@
-import  staticEscapeMap from '../static/staticEscapeMap'
+var staticEscapeMap = require('../static/staticEscapeMap')
 
-import  helperFormatEscaper from './helperFormatEscaper'
+var helperFormatEscaper = require('./helperFormatEscaper')
 
-import  each from '../base/each'
+var each = require('../base/each')
 
 var unescapeMap = {}
 each(staticEscapeMap, function (item, key) {
@@ -17,4 +17,4 @@ each(staticEscapeMap, function (item, key) {
   */
 var unescape = helperFormatEscaper(unescapeMap)
 
-export default unescape
+module.exports = unescape

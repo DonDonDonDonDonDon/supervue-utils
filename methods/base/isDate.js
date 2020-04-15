@@ -1,4 +1,4 @@
-import  helperCreateInInObjectString from './helperCreateInInObjectString'
+var helperCreateInInObjectString = require('./helperCreateInInObjectString')
 
 /**
   * 判断是否Date对象
@@ -8,4 +8,4 @@ import  helperCreateInInObjectString from './helperCreateInInObjectString'
   */
 var isDate = helperCreateInInObjectString('Date')
 
-export default isDate
+module.exports = isDate

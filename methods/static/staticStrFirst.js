@@ -1,3 +1,3 @@
 var staticStrFirst = 'first'
 
-export default staticStrFirst
+module.exports = staticStrFirst

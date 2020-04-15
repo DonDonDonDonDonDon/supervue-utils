@@ -9,4 +9,4 @@ function hasOwnProp (obj, key) {
   return obj && obj.hasOwnProperty ? obj.hasOwnProperty(key) : false
 }
 
-export default hasOwnProp
+module.exports = hasOwnProp

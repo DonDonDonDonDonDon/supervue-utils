@@ -25,4 +25,4 @@ function range (start, stop, step) {
   return result
 }
 
-export default range
+module.exports = range

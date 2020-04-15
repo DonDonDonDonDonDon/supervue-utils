@@ -1,4 +1,4 @@
-import  slice from '../array/slice'
+var slice = require('../array/slice')
 
 /**
   * 该方法和 setTimeout 一样的效果，区别就是支持上下文和额外参数
@@ -16,4 +16,4 @@ function delay (callback, wait) {
   }, wait)
 }
 
-export default delay
+module.exports = delay

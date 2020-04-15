@@ -20,4 +20,4 @@ var setupDefaults = {
   ]
 }
 
-export default setupDefaults
+module.exports = setupDefaults

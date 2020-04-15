@@ -4,4 +4,4 @@ function lastArrayEach (obj, iterate, context) {
   }
 }
 
-export default lastArrayEach
+module.exports = lastArrayEach

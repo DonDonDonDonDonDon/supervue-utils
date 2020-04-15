@@ -1,7 +1,7 @@
-import  staticLocation from '../static/staticLocation'
+var staticLocation = require('../static/staticLocation')
 
 function helperGetLocatOrigin () {
   return staticLocation ? (staticLocation.origin || (staticLocation.protocol + '//' + staticLocation.host)) : ''
 }
 
-export default helperGetLocatOrigin
+module.exports = helperGetLocatOrigin

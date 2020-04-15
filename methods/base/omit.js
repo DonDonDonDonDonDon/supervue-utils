@@ -1,4 +1,4 @@
-import  helperCreatePickOmit from './helperCreatePickOmit'
+var helperCreatePickOmit = require('./helperCreatePickOmit')
 
 /**
  * 根据 key 排除指定的属性值，返回一个新的对象
@@ -9,4 +9,4 @@ import  helperCreatePickOmit from './helperCreatePickOmit'
  */
 var omit = helperCreatePickOmit(0, 1)
 
-export default omit
+module.exports = omit

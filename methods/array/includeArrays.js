@@ -1,5 +1,5 @@
-import  isArray from '../base/isArray'
-import  includes from './includes'
+var isArray = require('../base/isArray')
+var includes = require('./includes')
 
 /**
   * 判断数组是否包含另一数组
@@ -22,4 +22,4 @@ function includeArrays (array1, array2) {
   return includes(array1, array2)
 }
 
-export default includeArrays
+module.exports = includeArrays

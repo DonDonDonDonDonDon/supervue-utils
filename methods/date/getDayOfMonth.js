@@ -1,13 +1,13 @@
-import  staticDayTime from '../static/staticDayTime'
-import  staticStrFirst from '../static/staticStrFirst'
-import  staticStrLast from '../static/staticStrLast'
+var staticDayTime = require('../static/staticDayTime')
+var staticStrFirst = require('../static/staticStrFirst')
+var staticStrLast = require('../static/staticStrLast')
 
-import  helperGetDateTime from './helperGetDateTime'
+var helperGetDateTime = require('./helperGetDateTime')
 
-import  getWhatMonth from './getWhatMonth'
-import  toStringDate from './toStringDate'
+var getWhatMonth = require('./getWhatMonth')
+var toStringDate = require('./toStringDate')
 
-import  isDate from '../base/isDate'
+var isDate = require('../base/isDate')
 
 /**
   * 返回某个月份的天数
@@ -24,4 +24,4 @@ function getDayOfMonth (date, month) {
   return date
 }
 
-export default getDayOfMonth
+module.exports = getDayOfMonth

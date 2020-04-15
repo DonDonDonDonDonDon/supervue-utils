@@ -1,8 +1,8 @@
-import  staticLocation from '../static/staticLocation'
+var staticLocation = require('../static/staticLocation')
 
-import  unserialize from './unserialize'
+var unserialize = require('./unserialize')
 
-import  helperGetLocatOrigin from '../browse/helperGetLocatOrigin'
+var helperGetLocatOrigin = require('../browse/helperGetLocatOrigin')
 
 function parseURLQuery (uri) {
   return unserialize(uri.split('?')[1] || '')
@@ -48,4 +48,4 @@ function parseUrl (url) {
   return parsed
 }
 
-export default parseUrl
+module.exports = parseUrl

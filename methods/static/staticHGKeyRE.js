@@ -1,3 +1,3 @@
 var staticHGKeyRE = /(.+)?\[(\d+)\]$/
 
-export default staticHGKeyRE
+module.exports = staticHGKeyRE

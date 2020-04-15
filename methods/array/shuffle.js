@@ -1,6 +1,6 @@
-import  random from '../number/random'
+var random = require('../number/random')
 
-import  values from '../base/values'
+var values = require('../base/values')
 
 /**
   * 将一个数组随机打乱，返回一个新的数组
@@ -21,4 +21,4 @@ function shuffle (array) {
   return result
 }
 
-export default shuffle
+module.exports = shuffle

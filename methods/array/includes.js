@@ -1,4 +1,4 @@
-import  indexOf from '../base/indexOf'
+var indexOf = require('../base/indexOf')
 
 /**
   * 判断对象是否包含该值,成功返回true否则false
@@ -11,4 +11,4 @@ function includes (obj, val) {
   return indexOf(obj, val) !== -1
 }
 
-export default includes
+module.exports = includes

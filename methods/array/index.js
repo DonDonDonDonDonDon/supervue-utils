@@ -1,41 +1,41 @@
 'use strict'
 
-import  map from './map'
-import  some from './some'
-import  every from './every'
-import  includeArrays from './includeArrays'
-import  arrayEach from './arrayEach'
-import  lastArrayEach from './lastArrayEach'
-import  uniq from './uniq'
-import  union from './union'
-import  toArray from './toArray'
-import  sortBy from './sortBy'
-import  shuffle from './shuffle'
-import  sample from './sample'
-import  slice from './slice'
-import  filter from './filter'
-import  findKey from './findKey'
-import  includes from './includes'
-import  find from './find'
-import  reduce from './reduce'
-import  copyWithin from './copyWithin'
-import  chunk from './chunk'
-import  zip from './zip'
-import  unzip from './unzip'
-import  zipObject from './zipObject'
-import  flatten from './flatten'
-import  pluck from './pluck'
-import  invoke from './invoke'
-import  invokeMap from './invokeMap'
-import  toArrayTree from './toArrayTree'
-import  toTreeArray from './toTreeArray'
-import  findTree from './findTree'
-import  eachTree from './eachTree'
-import  mapTree from './mapTree'
-import  filterTree from './filterTree'
-import  searchTree from './searchTree'
-import  arrayIndexOf from './arrayIndexOf'
-import  arrayLastIndexOf from './arrayLastIndexOf'
+var map = require('./map')
+var some = require('./some')
+var every = require('./every')
+var includeArrays = require('./includeArrays')
+var arrayEach = require('./arrayEach')
+var lastArrayEach = require('./lastArrayEach')
+var uniq = require('./uniq')
+var union = require('./union')
+var toArray = require('./toArray')
+var sortBy = require('./sortBy')
+var shuffle = require('./shuffle')
+var sample = require('./sample')
+var slice = require('./slice')
+var filter = require('./filter')
+var findKey = require('./findKey')
+var includes = require('./includes')
+var find = require('./find')
+var reduce = require('./reduce')
+var copyWithin = require('./copyWithin')
+var chunk = require('./chunk')
+var zip = require('./zip')
+var unzip = require('./unzip')
+var zipObject = require('./zipObject')
+var flatten = require('./flatten')
+var pluck = require('./pluck')
+var invoke = require('./invoke')
+var invokeMap = require('./invokeMap')
+var toArrayTree = require('./toArrayTree')
+var toTreeArray = require('./toTreeArray')
+var findTree = require('./findTree')
+var eachTree = require('./eachTree')
+var mapTree = require('./mapTree')
+var filterTree = require('./filterTree')
+var searchTree = require('./searchTree')
+var arrayIndexOf = require('./arrayIndexOf')
+var arrayLastIndexOf = require('./arrayLastIndexOf')
 
 var arrayExports = {
   uniq: uniq,
@@ -76,4 +76,4 @@ var arrayExports = {
   searchTree: searchTree
 }
 
-export default arrayExports
+module.exports = arrayExports

@@ -1,3 +1,3 @@
 var staticStrUndefined = 'undefined'
 
-export default staticStrUndefined
+module.exports = staticStrUndefined

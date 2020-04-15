@@ -1,4 +1,4 @@
-import  hasOwnProp from '../base/hasOwnProp'
+var hasOwnProp = require('../base/hasOwnProp')
 
 function objectEach (obj, iterate, context) {
   if (obj) {
@@ -10,4 +10,4 @@ function objectEach (obj, iterate, context) {
   }
 }
 
-export default objectEach
+module.exports = objectEach

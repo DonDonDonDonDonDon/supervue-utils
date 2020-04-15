@@ -1,4 +1,4 @@
-import  helperCreateInTypeof from './helperCreateInTypeof'
+var helperCreateInTypeof = require('./helperCreateInTypeof')
 
 /**
   * 判断是否方法
@@ -8,4 +8,4 @@ import  helperCreateInTypeof from './helperCreateInTypeof'
   */
 var isFunction = helperCreateInTypeof('function')
 
-export default isFunction
+module.exports = isFunction

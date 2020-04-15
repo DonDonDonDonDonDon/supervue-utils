@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export declare function minIterate(item: any, index: number, obj: any): any;
 
@@ -9,8 +9,8 @@ export declare function minIterate(item: any, index: number, obj: any): any;
  */
 export declare function min(array: Array<any>, iteratee: string | typeof minIterate): number;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 获取最小值
      * @param array 数组

@@ -1,9 +1,9 @@
 'use strict'
 
-import  getBaseURL from './getBaseURL'
-import  locat from './locat'
-import  browse from './browse'
-import  cookie from './cookie'
+var getBaseURL = require('./getBaseURL')
+var locat = require('./locat')
+var browse = require('./browse')
+var cookie = require('./cookie')
 
 var browseExports = {
   getBaseURL: getBaseURL,
@@ -12,4 +12,4 @@ var browseExports = {
   cookie: cookie
 }
 
-export default browseExports
+module.exports = browseExports

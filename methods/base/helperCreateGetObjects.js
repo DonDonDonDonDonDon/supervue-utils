@@ -1,4 +1,4 @@
-import  each from './each'
+var each = require('./each')
 
 function helperCreateGetObjects (name, getIndex) {
   var proMethod = Object[name]
@@ -18,4 +18,4 @@ function helperCreateGetObjects (name, getIndex) {
   }
 }
 
-export default helperCreateGetObjects
+module.exports = helperCreateGetObjects

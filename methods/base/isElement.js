@@ -1,5 +1,5 @@
-import  isString from './isString'
-import  isNumber from './isNumber'
+var isString = require('./isString')
+var isNumber = require('./isNumber')
 
 /**
   * 判断是否Element对象
@@ -11,4 +11,4 @@ function isElement (obj) {
   return !!(obj && isString(obj.nodeName) && isNumber(obj.nodeType))
 }
 
-export default isElement
+module.exports = isElement

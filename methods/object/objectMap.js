@@ -1,6 +1,6 @@
-import  each from '../base/each'
-import  isFunction from '../base/isFunction'
-import  property from '../function/property'
+var each = require('../base/each')
+var isFunction = require('../base/isFunction')
+var property = require('../function/property')
 
 /**
   * 指定方法后的返回值组成的新对象
@@ -27,4 +27,4 @@ function objectMap (obj, iterate, context) {
   return result
 }
 
-export default objectMap
+module.exports = objectMap

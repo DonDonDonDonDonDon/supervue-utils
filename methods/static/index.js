@@ -1,18 +1,18 @@
 'use strict'
 
-import  staticStrUndefined from './staticStrUndefined'
-import  staticStrLast from './staticStrLast'
-import  staticStrFirst from './staticStrFirst'
-import  staticDayTime from './staticDayTime'
-import  staticWeekTime from './staticWeekTime'
-import  staticLocation from './staticLocation'
-import  staticWindow from './staticWindow'
-import  staticDocument from './staticDocument'
-import  staticEncodeURIComponent from './staticEncodeURIComponent'
-import  staticDecodeURIComponent from './staticDecodeURIComponent'
-import  staticParseInt from './staticParseInt'
-import  staticEscapeMap from './staticEscapeMap'
-import  staticHGKeyRE from './staticHGKeyRE'
+var staticStrUndefined = require('./staticStrUndefined')
+var staticStrLast = require('./staticStrLast')
+var staticStrFirst = require('./staticStrFirst')
+var staticDayTime = require('./staticDayTime')
+var staticWeekTime = require('./staticWeekTime')
+var staticLocation = require('./staticLocation')
+var staticWindow = require('./staticWindow')
+var staticDocument = require('./staticDocument')
+var staticEncodeURIComponent = require('./staticEncodeURIComponent')
+var staticDecodeURIComponent = require('./staticDecodeURIComponent')
+var staticParseInt = require('./staticParseInt')
+var staticEscapeMap = require('./staticEscapeMap')
+var staticHGKeyRE = require('./staticHGKeyRE')
 
 var staticExports = {
   staticStrUndefined: staticStrUndefined,
@@ -30,4 +30,4 @@ var staticExports = {
   staticHGKeyRE: staticHGKeyRE
 }
 
-export default staticExports
+module.exports = staticExports

@@ -1,5 +1,5 @@
-import  isArray from '../base/isArray'
-import  arrayEach from './arrayEach'
+var isArray = require('../base/isArray')
+var arrayEach = require('./arrayEach')
 
 function flattenDeep (array, deep) {
   var result = []
@@ -22,4 +22,4 @@ function flatten (array, deep) {
   return []
 }
 
-export default flatten
+module.exports = flatten

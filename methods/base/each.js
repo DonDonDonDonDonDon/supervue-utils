@@ -1,6 +1,6 @@
-import  isArray from './isArray'
-import  arrayEach from '../array/arrayEach'
-import  objectEach from '../object/objectEach'
+var isArray = require('./isArray')
+var arrayEach = require('../array/arrayEach')
+var objectEach = require('../object/objectEach')
 
 /**
   * 迭代器
@@ -17,4 +17,4 @@ function each (obj, iterate, context) {
   return obj
 }
 
-export default each
+module.exports = each

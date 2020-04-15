@@ -1,7 +1,7 @@
-import  isFunction from './isFunction'
-import  isArray from './isArray'
-import  each from './each'
-import  findIndexOf from './findIndexOf'
+var isFunction = require('./isFunction')
+var isArray = require('./isArray')
+var each = require('./each')
+var findIndexOf = require('./findIndexOf')
 
 function helperCreatePickOmit (case1, case2) {
   return function (obj, callback) {
@@ -29,4 +29,4 @@ function helperCreatePickOmit (case1, case2) {
   }
 }
 
-export default helperCreatePickOmit
+module.exports = helperCreatePickOmit

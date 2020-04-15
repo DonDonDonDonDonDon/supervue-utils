@@ -5,4 +5,4 @@ function helperCreateInTypeof (type) {
   }
 }
 
-export default helperCreateInTypeof
+module.exports = helperCreateInTypeof

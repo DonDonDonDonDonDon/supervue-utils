@@ -1,6 +1,6 @@
 {
   "name": "supervue-utils",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "JavaScript 函数库、工具类",
   "main": "index.js",
   "unpkg": "dist/supervue-utils.min.js",

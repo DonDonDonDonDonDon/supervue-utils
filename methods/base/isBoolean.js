@@ -1,4 +1,4 @@
-import  helperCreateInTypeof from './helperCreateInTypeof'
+var helperCreateInTypeof = require('./helperCreateInTypeof')
 
 /**
   * 判断是否Boolean对象
@@ -8,4 +8,4 @@ import  helperCreateInTypeof from './helperCreateInTypeof'
   */
 var isBoolean = helperCreateInTypeof('boolean')
 
-export default isBoolean
+module.exports = isBoolean

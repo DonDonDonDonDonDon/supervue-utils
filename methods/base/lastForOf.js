@@ -1,5 +1,5 @@
-import  isArray from './isArray'
-import  keys from './hasOwnProp'
+var isArray = require('./isArray')
+var keys = require('./hasOwnProp')
 
 /**
   * 迭代器,从最后开始迭代,支持 return false 跳出循环 break
@@ -29,4 +29,4 @@ function lastForOf (obj, iterate, context) {
   }
 }
 
-export default lastForOf
+module.exports = lastForOf

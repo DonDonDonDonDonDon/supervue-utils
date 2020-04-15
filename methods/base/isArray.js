@@ -1,4 +1,4 @@
-import  helperCreateInInObjectString from './helperCreateInInObjectString'
+var helperCreateInInObjectString = require('./helperCreateInInObjectString')
 
 /**
   * 判断是否数组
@@ -8,4 +8,4 @@ import  helperCreateInInObjectString from './helperCreateInInObjectString'
   */
 var isArray = Array.isArray || helperCreateInInObjectString('Array')
 
-export default isArray
+module.exports = isArray

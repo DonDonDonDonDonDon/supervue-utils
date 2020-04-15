@@ -1,6 +1,6 @@
-import  map from './map'
+var map = require('./map')
 
-import  max from '../number/max'
+var max = require('../number/max')
 
 /**
  * 与 zip 相反
@@ -22,4 +22,4 @@ function unzip (arrays) {
   return result
 }
 
-export default unzip
+module.exports = unzip

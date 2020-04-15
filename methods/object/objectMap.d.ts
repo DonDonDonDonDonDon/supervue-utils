@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export declare function objectMapIterate(item: any, key: string, obj: any): any;
 
@@ -10,8 +10,8 @@ export declare function objectMapIterate(item: any, key: string, obj: any): any;
  */
 export declare function objectMap(obj: any, iteratee: typeof objectMapIterate, context ?: any): any;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 指定方法后的返回值组成的新对象
      * @param obj 对象

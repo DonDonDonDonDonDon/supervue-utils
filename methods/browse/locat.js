@@ -1,6 +1,6 @@
-import  staticLocation from '../static/staticLocation'
+var staticLocation = require('../static/staticLocation')
 
-import  parseUrl from '../url/parseUrl'
+var parseUrl = require('../url/parseUrl')
 
 /**
   * 获取地址栏信息
@@ -11,4 +11,4 @@ function locat () {
   return staticLocation ? parseUrl(staticLocation.href) : {}
 }
 
-export default locat
+module.exports = locat

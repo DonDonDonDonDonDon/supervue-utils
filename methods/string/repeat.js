@@ -1,6 +1,6 @@
-import  staticParseInt from '../static/staticParseInt'
+var staticParseInt = require('../static/staticParseInt')
 
-import  toValString from './toString'
+var toValString = require('./toString')
 
 /**
   * 将字符串重复 n 次
@@ -18,4 +18,4 @@ function repeat (str, count) {
   return list.join(rest) + (list.length > 0 ? rest : '')
 }
 
-export default repeat
+module.exports = repeat

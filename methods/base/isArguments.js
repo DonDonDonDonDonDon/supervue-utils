@@ -1,4 +1,4 @@
-import  helperCreateInInObjectString from './helperCreateInInObjectString'
+var helperCreateInInObjectString = require('./helperCreateInInObjectString')
 
 /**
   * 判断是否Arguments对象
@@ -8,4 +8,4 @@ import  helperCreateInInObjectString from './helperCreateInInObjectString'
   */
 var isArguments = helperCreateInInObjectString('Arguments')
 
-export default isArguments
+module.exports = isArguments

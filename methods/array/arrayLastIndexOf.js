@@ -10,4 +10,4 @@ function arrayLastIndexOf (obj, val) {
   return -1
 }
 
-export default arrayLastIndexOf
+module.exports = arrayLastIndexOf

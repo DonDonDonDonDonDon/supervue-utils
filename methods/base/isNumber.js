@@ -1,4 +1,4 @@
-import  helperCreateInTypeof from './helperCreateInTypeof'
+var helperCreateInTypeof = require('./helperCreateInTypeof')
 
 /**
   * 判断是否Number对象
@@ -8,4 +8,4 @@ import  helperCreateInTypeof from './helperCreateInTypeof'
   */
 var isNumber = helperCreateInTypeof('number')
 
-export default isNumber
+module.exports = isNumber

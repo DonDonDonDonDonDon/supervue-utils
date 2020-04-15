@@ -50,4 +50,4 @@ function debounce (callback, wait, options) {
   return debounced
 }
 
-export default debounce
+module.exports = debounce

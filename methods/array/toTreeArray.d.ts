@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 export interface toTreeArrayOptions {
   children?: string;
@@ -12,8 +12,8 @@ export interface toTreeArrayOptions {
  */
 export declare function toTreeArray(array: any[], options?: toTreeArrayOptions): any[];
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 将一个树结构转成数组列表
      * @param {Array} array 数组

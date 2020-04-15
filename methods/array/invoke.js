@@ -1,6 +1,6 @@
-import  map from './map'
+var map = require('./map')
 
-import  isArray from '../base/isArray'
+var isArray = require('../base/isArray')
 
 function deepGetObj (obj, path) {
   var index = 0
@@ -47,4 +47,4 @@ function invoke (list, path) {
   })
 }
 
-export default invoke
+module.exports = invoke

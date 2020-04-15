@@ -1,5 +1,5 @@
 /* eslint-disable valid-typeof */
-import  staticStrUndefined from '../static/staticStrUndefined'
+var staticStrUndefined = require('../static/staticStrUndefined')
 
 /**
   * 判断是否Map对象
@@ -12,4 +12,4 @@ function isMap (obj) {
   return supportMap && obj instanceof Map
 }
 
-export default isMap
+module.exports = isMap

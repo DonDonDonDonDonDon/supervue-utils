@@ -1,5 +1,5 @@
-import  invoke from './invoke'
+var invoke = require('./invoke')
 
 var invokeMap = invoke
 
-export default invokeMap
+module.exports = invokeMap

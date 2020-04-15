@@ -1,8 +1,8 @@
-import  setupDefaults from '../setupDefaults'
+var setupDefaults = require('../setupDefaults')
 
-import  each from '../base/each'
+var each = require('../base/each')
 
-import  assign from '../object/assign'
+var assign = require('../object/assign')
 
 function unTreeList (result, array, opts) {
   var children
@@ -32,4 +32,4 @@ function toTreeArray (array, options) {
   return unTreeList([], array, assign({}, setupDefaults.treeOptions, options))
 }
 
-export default toTreeArray
+module.exports = toTreeArray

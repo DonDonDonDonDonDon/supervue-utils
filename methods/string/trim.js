@@ -1,5 +1,5 @@
-import  trimRight from './trimRight'
-import  trimLeft from './trimLeft'
+var trimRight = require('./trimRight')
+var trimLeft = require('./trimLeft')
 
 /**
   * 去除字符串左右两边的空格
@@ -11,4 +11,4 @@ function trim (str) {
   return str && str.trim ? str.trim() : trimRight(trimLeft(str))
 }
 
-export default trim
+module.exports = trim

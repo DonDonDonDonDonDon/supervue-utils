@@ -1,4 +1,4 @@
-import  helperCreateMinMax from './helperCreateMinMax'
+var helperCreateMinMax = require('./helperCreateMinMax')
 
 /**
   * 获取最小值
@@ -11,4 +11,4 @@ var min = helperCreateMinMax(function (rest, itemVal) {
   return rest > itemVal
 })
 
-export default min
+module.exports = min

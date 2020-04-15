@@ -1,6 +1,6 @@
-import  eqNull from '../base/eqNull'
-import  isNumber from '../base/isNumber'
-import  helperNumString from '../number/helperNumString'
+var eqNull = require('../base/eqNull')
+var isNumber = require('../base/isNumber')
+var helperNumString = require('../number/helperNumString')
 
 function toValString (obj) {
   if (isNumber(obj)) {
@@ -9,4 +9,4 @@ function toValString (obj) {
   return '' + (eqNull(obj) ? '' : obj)
 }
 
-export default toValString
+module.exports = toValString

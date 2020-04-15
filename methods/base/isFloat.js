@@ -1,6 +1,6 @@
-import  isArray from './isArray'
-import  isInteger from './isInteger'
-import  isNull from './isNull'
+var isArray = require('./isArray')
+var isInteger = require('./isInteger')
+var isNull = require('./isNull')
 
 /**
   * 判断是否小数
@@ -12,4 +12,4 @@ function isFloat (obj) {
   return !isNull(obj) && !isNaN(obj) && !isArray(obj) && !isInteger(obj)
 }
 
-export default isFloat
+module.exports = isFloat

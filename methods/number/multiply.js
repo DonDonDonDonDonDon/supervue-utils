@@ -1,6 +1,6 @@
-import  helperNumberDecimal from './helperNumberDecimal'
-import  helperNumString from './helperNumString'
-import  toNumber from './toNumber'
+var helperNumberDecimal = require('./helperNumberDecimal')
+var helperNumString = require('./helperNumString')
+var toNumber = require('./toNumber')
 
 /**
  * 乘法运算
@@ -17,4 +17,4 @@ function multiply (num1, num2) {
   return parseInt(str1.replace('.', '')) * parseInt(str2.replace('.', '')) / Math.pow(10, helperNumberDecimal(str1) + helperNumberDecimal(str2))
 }
 
-export default multiply
+module.exports = multiply

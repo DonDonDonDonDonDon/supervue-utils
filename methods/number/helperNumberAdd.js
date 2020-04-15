@@ -1,6 +1,6 @@
-import  helperNumberDecimal from './helperNumberDecimal'
-import  helperNumString from './helperNumString'
-import  multiply from './multiply'
+var helperNumberDecimal = require('./helperNumberDecimal')
+var helperNumString = require('./helperNumString')
+var multiply = require('./multiply')
 
 function helperNumberAdd (addend, augend) {
   var str1 = helperNumString(addend)
@@ -9,4 +9,4 @@ function helperNumberAdd (addend, augend) {
   return (multiply(addend, ratio) + multiply(augend, ratio)) / ratio
 }
 
-export default helperNumberAdd
+module.exports = helperNumberAdd

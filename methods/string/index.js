@@ -1,19 +1,19 @@
 'use strict'
 
-import  padEnd from './padEnd'
-import  padStart from './padStart'
-import  repeat from './repeat'
-import  trim from './trim'
-import  trimRight from './trimRight'
-import  trimLeft from './trimLeft'
-import  escape from './escape'
-import  unescape from './unescape'
-import  camelCase from './camelCase'
-import  kebabCase from './kebabCase'
-import  startsWith from './startsWith'
-import  endsWith from './endsWith'
-import  template from './template'
-import  toValString from './toString'
+var padEnd = require('./padEnd')
+var padStart = require('./padStart')
+var repeat = require('./repeat')
+var trim = require('./trim')
+var trimRight = require('./trimRight')
+var trimLeft = require('./trimLeft')
+var escape = require('./escape')
+var unescape = require('./unescape')
+var camelCase = require('./camelCase')
+var kebabCase = require('./kebabCase')
+var startsWith = require('./startsWith')
+var endsWith = require('./endsWith')
+var template = require('./template')
+var toValString = require('./toString')
 
 var stringExports = {
   trim: trim,
@@ -32,4 +32,4 @@ var stringExports = {
   toString: toValString
 }
 
-export default stringExports
+module.exports = stringExports

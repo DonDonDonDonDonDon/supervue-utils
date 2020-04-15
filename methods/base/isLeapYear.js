@@ -1,7 +1,7 @@
-import  isDate from './isDate'
-import  toStringDate from '../date/toStringDate'
+var isDate = require('./isDate')
+var toStringDate = require('../date/toStringDate')
 
-import  helperNewDate from '../date/helperNewDate'
+var helperNewDate = require('../date/helperNewDate')
 
 /**
   * 判断是否闰年
@@ -19,4 +19,4 @@ function isLeapYear (date) {
   return false
 }
 
-export default isLeapYear
+module.exports = isLeapYear

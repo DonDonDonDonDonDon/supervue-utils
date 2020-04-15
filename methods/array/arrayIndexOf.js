@@ -9,4 +9,4 @@ function arrayIndexOf (obj, val) {
   }
 }
 
-export default arrayIndexOf
+module.exports = arrayIndexOf

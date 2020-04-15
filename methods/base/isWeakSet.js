@@ -1,5 +1,5 @@
 /* eslint-disable valid-typeof */
-import  staticStrUndefined from '../static/staticStrUndefined'
+var staticStrUndefined = require('../static/staticStrUndefined')
 
 /**
   * 判断是否WeakSet对象
@@ -12,4 +12,4 @@ function isWeakSet (obj) {
   return supportWeakSet && obj instanceof WeakSet
 }
 
-export default isWeakSet
+module.exports = isWeakSet

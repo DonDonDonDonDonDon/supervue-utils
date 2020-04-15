@@ -1,9 +1,9 @@
-import  isArray from './isArray'
-import  isPlainObject from './isPlainObject'
+var isArray = require('./isArray')
+var isPlainObject = require('./isPlainObject')
 
-import  objectMap from '../object/objectMap'
+var objectMap = require('../object/objectMap')
 
-import  map from '../array/map'
+var map = require('../array/map')
 
 function startClone (func, obj, deep) {
   return func(obj, deep ? function (val) {
@@ -31,5 +31,4 @@ function clone (obj, deep) {
   return obj
 }
 
-export default clone
-
+module.exports = clone

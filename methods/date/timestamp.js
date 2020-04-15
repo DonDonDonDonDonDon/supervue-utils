@@ -1,9 +1,9 @@
-import  helperGetDateTime from './helperGetDateTime'
+var helperGetDateTime = require('./helperGetDateTime')
 
-import  now from './now'
-import  toStringDate from './toStringDate'
+var now = require('./now')
+var toStringDate = require('./toStringDate')
 
-import  isDate from '../base/isDate'
+var isDate = require('../base/isDate')
 
 /**
  * 将日期格式化为时间戳
@@ -20,4 +20,4 @@ var timestamp = function (str, format) {
   return now()
 }
 
-export default timestamp
+module.exports = timestamp

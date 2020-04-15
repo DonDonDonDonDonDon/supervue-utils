@@ -1,8 +1,8 @@
-import  helperEqualCompare from './helperEqualCompare'
-import  helperDefaultCompare from './helperDefaultCompare'
+var helperEqualCompare = require('./helperEqualCompare')
+var helperDefaultCompare = require('./helperDefaultCompare')
 
-import  isFunction from './isFunction'
-import  isUndefined from './isUndefined'
+var isFunction = require('./isFunction')
+var isUndefined = require('./isUndefined')
 
 /**
  * 深度比较两个对象之间的值是否相等，使用自定义比较函数
@@ -22,4 +22,4 @@ function isEqualWith (obj1, obj2, func) {
   return helperEqualCompare(obj1, obj2, helperDefaultCompare)
 }
 
-export default isEqualWith
+module.exports = isEqualWith

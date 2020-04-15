@@ -1,5 +1,5 @@
-import  isArray from './isArray'
-import  hasOwnProp from './hasOwnProp'
+var isArray = require('./isArray')
+var hasOwnProp = require('./hasOwnProp')
 
 /**
   * 迭代器,支持 return false 跳出循环 break
@@ -29,4 +29,4 @@ function forOf (obj, iterate, context) {
   }
 }
 
-export default forOf
+module.exports = forOf

@@ -1,4 +1,4 @@
-import  keys from '../base/keys'
+var keys = require('../base/keys')
 
 /**
   * 接收一个函数作为累加器，数组中的每个值（从左到右）开始合并，最终为一个值。
@@ -36,4 +36,4 @@ function reduce (array, callback, initialValue) {
   }
 }
 
-export default reduce
+module.exports = reduce

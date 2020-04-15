@@ -1,3 +1,3 @@
 var staticEncodeURIComponent = encodeURIComponent
 
-export default staticEncodeURIComponent
+module.exports = staticEncodeURIComponent

@@ -1,5 +1,5 @@
-import  hasOwnProp from '../base/hasOwnProp'
-import  isArray from '../base/isArray'
+var hasOwnProp = require('../base/hasOwnProp')
+var isArray = require('../base/isArray')
 
 function helperCreateIterateHandle (prop, useArray, restIndex, matchValue, defaultValue) {
   return function (obj, iterate, context) {
@@ -28,4 +28,4 @@ function helperCreateIterateHandle (prop, useArray, restIndex, matchValue, defau
   }
 }
 
-export default helperCreateIterateHandle
+module.exports = helperCreateIterateHandle

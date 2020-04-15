@@ -1,8 +1,8 @@
-import  staticDecodeURIComponent from '../static/staticDecodeURIComponent'
+var staticDecodeURIComponent = require('../static/staticDecodeURIComponent')
 
-import  arrayEach from '../array/arrayEach'
+var arrayEach = require('../array/arrayEach')
 
-import  isString from '../base/isString'
+var isString = require('../base/isString')
 
 /**
  * 查询参数序列化
@@ -21,4 +21,4 @@ function unserialize (str) {
   return result
 }
 
-export default unserialize
+module.exports = unserialize

@@ -8,4 +8,4 @@ function isNull (obj) {
   return obj === null
 }
 
-export default isNull
+module.exports = isNull

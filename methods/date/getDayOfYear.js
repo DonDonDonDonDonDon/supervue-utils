@@ -1,8 +1,8 @@
-import  getWhatYear from './getWhatYear'
-import  toStringDate from './toStringDate'
+var getWhatYear = require('./getWhatYear')
+var toStringDate = require('./toStringDate')
 
-import  isDate from '../base/isDate'
-import  isLeapYear from '../base/isLeapYear'
+var isDate = require('../base/isDate')
+var isLeapYear = require('../base/isLeapYear')
 
 /**
   * 返回某个年份的天数
@@ -19,4 +19,4 @@ function getDayOfYear (date, year) {
   return date
 }
 
-export default getDayOfYear
+module.exports = getDayOfYear

@@ -1,6 +1,6 @@
-import  toNumber from './toNumber'
-import  toInteger from './toInteger'
-import  helperFixedNumber from './helperFixedNumber'
+var toNumber = require('./toNumber')
+var toInteger = require('./toInteger')
+var helperFixedNumber = require('./helperFixedNumber')
 
 /**
  * 和 Number.toFixed 类似，区别就是不会对小数进行四舍五入，结果返回数值
@@ -13,4 +13,4 @@ function toFixedNumber (str, digits) {
   return rest === 0 ? 0 : rest
 }
 
-export default toFixedNumber
+module.exports = toFixedNumber

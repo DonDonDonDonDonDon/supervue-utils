@@ -1,5 +1,5 @@
-import  helperCreateTreeFunc from './helperCreateTreeFunc'
-import  each from '../base/each'
+var helperCreateTreeFunc = require('./helperCreateTreeFunc')
+var each = require('../base/each')
 
 function eachTreeItem (parent, obj, iterate, context, path, node, parseChildren, opts) {
   var paths, nodes
@@ -24,4 +24,4 @@ function eachTreeItem (parent, obj, iterate, context, path, node, parseChildren,
   */
 var eachTree = helperCreateTreeFunc(eachTreeItem)
 
-export default eachTree
+module.exports = eachTree

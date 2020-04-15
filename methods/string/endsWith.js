@@ -1,4 +1,4 @@
-import  toValString from './toString'
+var toValString = require('./toString')
 
 /**
   * 判断字符串是否在源字符串的尾部
@@ -14,4 +14,4 @@ function endsWith (str, val, startIndex) {
   return argsLen > 1 && (argsLen > 2 ? rest.substring(0, startIndex).indexOf(val) === startIndex - 1 : rest.indexOf(val) === rest.length - 1)
 }
 
-export default endsWith
+module.exports = endsWith

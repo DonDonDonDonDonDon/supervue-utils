@@ -1,8 +1,8 @@
-import  helperNumberAdd from './helperNumberAdd'
+var helperNumberAdd = require('./helperNumberAdd')
 
-import  isFunction from '../base/isFunction'
-import  each from '../base/each'
-import  get from '../base/get'
+var isFunction = require('../base/isFunction')
+var each = require('../base/each')
+var get = require('../base/get')
 
 /**
   * 求和函数，将数值相加
@@ -24,4 +24,4 @@ function sum (array, iterate, context) {
   return result
 }
 
-export default sum
+module.exports = sum

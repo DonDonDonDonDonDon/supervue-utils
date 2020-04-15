@@ -1,4 +1,4 @@
-import  helperCreateInInObjectString from './helperCreateInInObjectString'
+var helperCreateInInObjectString = require('./helperCreateInInObjectString')
 
 /**
   * 判断是否RegExp对象
@@ -8,4 +8,4 @@ import  helperCreateInInObjectString from './helperCreateInInObjectString'
   */
 var isRegExp = helperCreateInInObjectString('RegExp')
 
-export default isRegExp
+module.exports = isRegExp

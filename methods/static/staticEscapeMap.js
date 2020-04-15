@@ -7,4 +7,4 @@ var staticEscapeMap = {
   '`': '&#x60;'
 }
 
-export default staticEscapeMap
+module.exports = staticEscapeMap

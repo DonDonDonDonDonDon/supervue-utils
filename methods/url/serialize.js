@@ -1,10 +1,10 @@
-import  staticEncodeURIComponent from '../static/staticEncodeURIComponent'
+var staticEncodeURIComponent = require('../static/staticEncodeURIComponent')
 
-import  each from '../base/each'
-import  isArray from '../base/isArray'
-import  isNull from '../base/isNull'
-import  isUndefined from '../base/isUndefined'
-import  isPlainObject from '../base/isPlainObject'
+var each = require('../base/each')
+var isArray = require('../base/isArray')
+var isNull = require('../base/isNull')
+var isUndefined = require('../base/isUndefined')
+var isPlainObject = require('../base/isPlainObject')
 
 function stringifyParams (resultVal, resultKey, isArr) {
   var _arr
@@ -41,4 +41,4 @@ function serialize (query) {
   return params.join('&').replace(/%20/g, '+')
 }
 
-export default serialize
+module.exports = serialize

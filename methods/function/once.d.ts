@@ -1,4 +1,4 @@
-import { SupervueUtilsMethods } from '../supervue-utils'
+import { XEUtilsMethods } from '../xe-utils'
 
 /**
  * 创建一个只能调用一次的函数,只会返回第一次执行后的结果
@@ -8,8 +8,8 @@ import { SupervueUtilsMethods } from '../supervue-utils'
  */
 export declare function once(callback: Function, context?: any, ...params: any[]): Function;
 
-declare module '../supervue-utils' {
-  interface SupervueUtilsMethods {
+declare module '../xe-utils' {
+  interface XEUtilsMethods {
     /**
      * 创建一个只能调用一次的函数,只会返回第一次执行后的结果
      * @param callback 回调

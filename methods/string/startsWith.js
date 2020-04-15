@@ -1,4 +1,4 @@
-import  toValString from './toString'
+var toValString = require('./toString')
 
 /**
   * 判断字符串是否在源字符串的头部
@@ -13,4 +13,4 @@ function startsWith (str, val, startIndex) {
   return (arguments.length === 1 ? rest : rest.substring(startIndex)).indexOf(val) === 0
 }
 
-export default startsWith
+module.exports = startsWith

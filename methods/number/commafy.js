@@ -1,7 +1,7 @@
-import  toNumber from './toNumber'
+var toNumber = require('./toNumber')
 
-import  assign from '../object/assign'
-import  toValString from '../string/toString'
+var assign = require('../object/assign')
+var toValString = require('../string/toString')
 
 /**
   * 千分位分隔符、小数点
@@ -21,4 +21,4 @@ function commafy (num, options) {
   return num
 }
 
-export default commafy
+module.exports = commafy

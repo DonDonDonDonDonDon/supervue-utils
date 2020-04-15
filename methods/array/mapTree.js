@@ -1,6 +1,6 @@
-import  helperCreateTreeFunc from './helperCreateTreeFunc'
+var helperCreateTreeFunc = require('./helperCreateTreeFunc')
 
-import  map from './map'
+var map = require('./map')
 
 function mapTreeItem (parent, obj, iterate, context, path, node, parseChildren, opts) {
   var paths, nodes, rest
@@ -27,4 +27,4 @@ function mapTreeItem (parent, obj, iterate, context, path, node, parseChildren, 
   */
 var mapTree = helperCreateTreeFunc(mapTreeItem)
 
-export default mapTree
+module.exports = mapTree

@@ -3,4 +3,4 @@ function helperGetHGSKeys (property) {
   return property ? (property.splice && property.join ? property : ('' + property).split('.')) : []
 }
 
-export default helperGetHGSKeys
+module.exports = helperGetHGSKeys

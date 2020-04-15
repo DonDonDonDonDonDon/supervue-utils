@@ -1,5 +1,5 @@
-import  helperGetDateTime from './helperGetDateTime'
-import  helperNewDate from './helperNewDate'
+var helperGetDateTime = require('./helperGetDateTime')
+var helperNewDate = require('./helperNewDate')
 
 /**
  * 返回当前时间戳
@@ -10,4 +10,4 @@ var now = Date.now || function () {
   return helperGetDateTime(helperNewDate())
 }
 
-export default now
+module.exports = now

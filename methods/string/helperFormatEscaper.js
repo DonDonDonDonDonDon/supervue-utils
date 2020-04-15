@@ -1,5 +1,5 @@
-import  toValString from './toString'
-import  keys from '../base/keys'
+var toValString = require('./toString')
+var keys = require('../base/keys')
 
 function helperFormatEscaper (dataMap) {
   var replaceRegexp = new RegExp('(?:' + keys(dataMap).join('|') + ')', 'g')
@@ -10,4 +10,4 @@ function helperFormatEscaper (dataMap) {
   }
 }
 
-export default helperFormatEscaper
+module.exports = helperFormatEscaper

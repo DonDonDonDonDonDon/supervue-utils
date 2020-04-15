@@ -1,6 +1,6 @@
-import  isArray from './isArray'
-import  isString from './isString'
-import  each from './each'
+var isArray = require('./isArray')
+var isString = require('./isString')
+var each = require('./each')
 
 /**
   * 返回对象的长度
@@ -19,4 +19,4 @@ function getSize (obj) {
   return len
 }
 
-export default getSize
+module.exports = getSize

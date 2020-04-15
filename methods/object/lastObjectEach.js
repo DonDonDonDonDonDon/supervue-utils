@@ -1,5 +1,5 @@
-import  lastArrayEach from '../array/lastArrayEach'
-import  keys from '../base/keys'
+var lastArrayEach = require('../array/lastArrayEach')
+var keys = require('../base/keys')
 
 function lastObjectEach (obj, iterate, context) {
   lastArrayEach(keys(obj), function (key) {
@@ -7,4 +7,4 @@ function lastObjectEach (obj, iterate, context) {
   })
 }
 
-export default lastObjectEach
+module.exports = lastObjectEach

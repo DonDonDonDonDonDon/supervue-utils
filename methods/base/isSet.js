@@ -1,5 +1,5 @@
 /* eslint-disable valid-typeof */
-import  staticStrUndefined from '../static/staticStrUndefined'
+var staticStrUndefined = require('../static/staticStrUndefined')
 
 /**
   * 判断是否Set对象
@@ -12,4 +12,4 @@ function isSet (obj) {
   return supportSet && obj instanceof Set
 }
 
-export default isSet
+module.exports = isSet

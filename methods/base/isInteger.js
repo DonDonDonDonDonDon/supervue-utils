@@ -1,5 +1,5 @@
-import  isArray from './isArray'
-import  isNull from './isNull'
+var isArray = require('./isArray')
+var isNull = require('./isNull')
 
 /**
   * 判断是否整数
@@ -11,4 +11,4 @@ var isInteger = function (obj) {
   return !isNull(obj) && !isNaN(obj) && !isArray(obj) && obj % 1 === 0
 }
 
-export default isInteger
+module.exports = isInteger

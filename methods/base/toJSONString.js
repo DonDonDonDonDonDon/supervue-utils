@@ -8,4 +8,4 @@ function toJSONString (obj) {
   return JSON.stringify(obj) || ''
 }
 
-export default toJSONString
+module.exports = toJSONString

@@ -1,4 +1,4 @@
-import  helperCreateTreeFunc from './helperCreateTreeFunc'
+var helperCreateTreeFunc = require('./helperCreateTreeFunc')
 
 function findTreeItem (parent, obj, iterate, context, path, node, parseChildren, opts) {
   if (obj) {
@@ -31,4 +31,4 @@ function findTreeItem (parent, obj, iterate, context, path, node, parseChildren,
   */
 var findTree = helperCreateTreeFunc(findTreeItem)
 
-export default findTree
+module.exports = findTree

@@ -1,14 +1,14 @@
-import  setupDefaults from '../setupDefaults'
+var setupDefaults = require('../setupDefaults')
 
-import  map from './map'
-import  sortBy from './sortBy'
+var map = require('./map')
+var sortBy = require('./sortBy')
 
-import  clone from '../base/clone'
-import  includes from './includes'
-import  each from '../base/each'
-import  remove from '../base/remove'
+var clone = require('../base/clone')
+var includes = require('./includes')
+var each = require('../base/each')
+var remove = require('../base/remove')
 
-import  assign from '../object/assign'
+var assign = require('../object/assign')
 
 function strictTree (array, optChildren) {
   each(array, function (item) {
@@ -81,4 +81,4 @@ function toArrayTree (array, options) {
   return result
 }
 
-export default toArrayTree
+module.exports = toArrayTree

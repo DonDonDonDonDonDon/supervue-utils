@@ -1,5 +1,5 @@
-import  assign from './assign'
+var assign = require('./assign')
 
 var extend = assign
 
-export default extend
+module.exports = extend
